@@ -4,12 +4,14 @@ main:
     # url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   - # title: "Sobre mim"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  - title: "Materiais de aula"
+  - title: "Notas de aula"
   #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
+    url: /notas-de-aula/
+  - title: "Tutoriais"
+    # url: /collection-archive/
+    url: /tutoriais/
   # - title: "Sitemap"
   #   url: /sitemap/
-  - title: "Posts"
-    url: /posts/
+  - title: "Problemas resolvidos"
+    url: /problemas-resolvidos/
   - title: "Sobre mim"

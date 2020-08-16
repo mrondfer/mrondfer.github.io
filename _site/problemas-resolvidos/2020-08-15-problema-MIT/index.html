@@ -9,30 +9,30 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Marcos Ferriera - Website</title>
-<meta name="description" content="Site em construção">
+<!-- begin _includes/seo.html --><title>Torneio de Harvard - MIT - Marcos Ferriera - Website</title>
+<meta name="description" content="Problema. No quadrilátero $\mathsf{ABCD}$, $\mathsf{D\hat{A}C = 98^\circ}$, $\mathsf{D\hat{B}C = 70^\circ}$ e $\mathsf{\overline{BC} = \overline{AD} }$. Encontre $\mathsf{A\hat{C}D}$.">
 
 
   <meta name="author" content="Marcos Ferreira">
 
 
-<meta property="og:type" content="website">
+<meta property="og:type" content="article">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Marcos Ferriera - Website">
-<meta property="og:title" content="Marcos Ferriera - Website">
-<meta property="og:url" content="http://localhost:4000/">
+<meta property="og:title" content="Torneio de Harvard - MIT">
+<meta property="og:url" content="http://localhost:4000/problemas-resolvidos/2020-08-15-problema-MIT/">
 
 
-  <meta property="og:description" content="Site em construção">
+  <meta property="og:description" content="Problema. No quadrilátero $\mathsf{ABCD}$, $\mathsf{D\hat{A}C = 98^\circ}$, $\mathsf{D\hat{B}C = 70^\circ}$ e $\mathsf{\overline{BC} = \overline{AD} }$. Encontre $\mathsf{A\hat{C}D}$.">
 
 
 
 
 
   <meta name="twitter:site" content="@mrondiney">
-  <meta name="twitter:title" content="Marcos Ferriera - Website">
-  <meta name="twitter:description" content="Site em construção">
-  <meta name="twitter:url" content="http://localhost:4000/">
+  <meta name="twitter:title" content="Torneio de Harvard - MIT">
+  <meta name="twitter:description" content="Problema. No quadrilátero $\mathsf{ABCD}$, $\mathsf{D\hat{A}C = 98^\circ}$, $\mathsf{D\hat{B}C = 70^\circ}$ e $\mathsf{\overline{BC} = \overline{AD} }$. Encontre $\mathsf{A\hat{C}D}$.">
+  <meta name="twitter:url" content="http://localhost:4000/problemas-resolvidos/2020-08-15-problema-MIT/">
 
   
     <meta name="twitter:card" content="summary">
@@ -43,6 +43,8 @@
 
 
 
+  <meta property="article:published_time" content="2020-08-15T00:00:00-03:00">
+
 
 
 
@@ -52,7 +54,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/">
+<link rel="canonical" href="http://localhost:4000/problemas-resolvidos/2020-08-15-problema-MIT/">
 
 
 
@@ -115,7 +117,7 @@
 
   </head>
 
-  <body class="layout--home">
+  <body class="layout--collection wide">
     <nav class="skip-links">
   <h2 class="screen-reader-text">Skip links</h2>
   <ul>
@@ -302,21 +304,68 @@
 
   <div class="archive">
     
-      <h1 id="page-title" class="page__title"></h1>
+      <h1 id="page-title" class="page__title">Torneio de Harvard - MIT</h1>
     
-    
+    <p><strong>Problema.</strong> No quadrilátero $\mathsf{ABCD}$, $\mathsf{D\hat{A}C = 98^\circ}$, $\mathsf{D\hat{B}C = 70^\circ}$ e $\mathsf{\overline{BC} = \overline{AD} }$. Encontre $\mathsf{A\hat{C}D}$.</p>
 
-<h3 class="archive__subtitle">Publicações recentes</h3>
+<p><strong>Solução.</strong>
+Aplicando a lei dos senos nos triângulo BCD, temos</p>
+
+\[\mathsf{\frac{\overline{CD}}{sen ~ 82^\circ} = \frac{\overline{BC}}{sen ~ 28^\circ}}.\]
+
+<p>Como $\mathsf{ \overline{BC} = \overline{AD} }$, temos que</p>
+
+<!--- $$\mathsf{ \frac{\overline{CD}}{\sin ~ 82^\circ} = \frac{\overline{BC}}{\sin ~ 28^\circ} = \frac{\overline{AD}}{\sin ~ 28^\circ} }.$$ --->
+
+<p>\begin{equation}\label{eq:1}
+\mathsf{ \frac{\overline{CD}}{sen ~ 82^\circ} = \frac{\overline{BC}}{sen ~ 28^\circ} = \frac{\overline{AD}}{sen ~ 28^\circ} }.
+\end{equation}</p>
+
+<p>Aplicando novamente a lei dos senos, mas agora no triângulo ACD, segue que</p>
+
+\[\mathsf{ \frac{\overline{AD}}{sen ~ A\hat{C}D} = \dfrac{\overline{CD}}{sen ~ 98^\circ}}.\]
+
+<p>Agora, note que a soma de $\mathsf{98^\circ}$ com $\mathsf{82^\circ}$ é igual a $\mathsf{ 180^\circ }$. Isso quer dizer que eles correspondem a medidas de ângulos suplementares. Daí,</p>
+
+\[\mathsf{ sen~82^\circ = sen~98^\circ }\]
+
+<p>e
+<!--- $$\mathsf{ \frac{\overline{AD}}{\sin ~ A\hat{C}D} = \frac{\overline{CD}}{\sin ~ 98^\circ} = \frac{\overline{CD}}{\sin ~ 82^\circ} }.$$ ---></p>
+
+<p>\begin{equation}\label{eq:2}
+\mathsf{ \frac{\overline{AD}}{sen ~ A\hat{C}D} = \frac{\overline{CD}}{sen ~ 98^\circ} = \frac{\overline{CD}}{sen ~ 82^\circ} }.
+\end{equation}</p>
+
+<p>Portanto, das equações \eqref{eq:1} e \eqref{eq:2} , concluímos que</p>
+
+\[\mathsf{A\hat{C}D = 28^\circ}.\]
 
 
 
-
-<div class="entries-list">
+<div class="entries-grid">
   
+
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/problemas-resolvidos/2020-08-15-problema-MIT/" rel="permalink">Torneio de Harvard - MIT
+</a>
+      
+    </h2>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">Problema. No quadrilátero $\mathsf{ABCD}$, $\mathsf{D\hat{A}C = 98^\circ}$, $\mathsf{D\hat{B}C = 70^\circ}$ e $\mathsf{\overline{BC} = \overline{AD} }$. Enco...</p>
+  </article>
 </div>
 
-
-
+</div>
 
   </div>
 </div>
@@ -393,6 +442,26 @@
 
 
 
+
+  <script type="text/javascript" async
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true},
+    jax: ["input/TeX","input/MathML","input/AsciiMath","output/CommonHTML"],
+    extensions: ["tex2jax.js","mml2jax.js","asciimath2jax.js","MathMenu.js","MathZoom.js","AssistiveMML.js"],
+    TeX: {
+    extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"],
+    equationNumbers: {
+    autoNumber: "AMS"
+    }
+    }
+    });
+  </script>
 
 
   </body>

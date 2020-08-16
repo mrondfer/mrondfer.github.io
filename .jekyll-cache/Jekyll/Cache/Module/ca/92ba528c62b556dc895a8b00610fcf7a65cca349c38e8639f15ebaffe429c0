@@ -1,4 +1,4 @@
-I"œ
+I"|
 
 <div class="masthead">
   <div class="masthead__inner-wrap">
@@ -9,16 +9,18 @@
         
         <a class="site-title" href="/">
           Marcos Ferriera - Website
-          <span class="site-subtitle">Materiais de aula para consulta livre</span>
+          <span class="site-subtitle">Notas de aula, tutoriais, problemas resolvidos y algunas cositas m√°s</span>
         </a>
         <ul class="visible-links"><li class="masthead__menu-item">
               <a href=""></a>
             </li><li class="masthead__menu-item">
               <a href=""></a>
             </li><li class="masthead__menu-item">
-              <a href="">Materiais de aula</a>
+              <a href="/notas-de-aula/">Notas de aula</a>
             </li><li class="masthead__menu-item">
-              <a href="/posts/">Posts</a>
+              <a href="/tutoriais/">Tutoriais</a>
+            </li><li class="masthead__menu-item">
+              <a href="/problemas-resolvidos/">Problemas resolvidos</a>
             </li><li class="masthead__menu-item">
               <a href="">Sobre mim</a>
             </li></ul>

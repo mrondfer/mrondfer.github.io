@@ -18,13 +18,13 @@ minimal_mistakes_skin    : "air" #"default" # "air", "aqua", "contrast", "dark",
 locale                   : "pt-BR"
 title                    : "Marcos Ferriera - Website"
 title_separator          : "-"
-subtitle                 : "Materiais de aula para consulta livre"
+subtitle                 : "Notas de aula, tutoriais, problemas resolvidos y algunas cositas más"
 name                     : "Marcos Ferreira"
 description              : "Site em construção"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "images/500x300.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "images/favicon-96x96.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
@@ -98,12 +98,12 @@ author:
   avatar           : "images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Professor de matemática - IFSul"
   location         : "Pelotas, RS - Brasil"
-  email            : "marcosferreira@pelotas.ifsul.edu.br"
+  email            : #"marcosferreira@pelotas.ifsul.edu.br"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       # url: "mailto:your.name@email.com"
-      # url: "marcosferreira@pelotas.ifsul.edu.br"
+      url: mailto:marcosferreira@pelotas.ifsul.edu.br"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -127,13 +127,13 @@ footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url:
+      url: "https://twitter.com/mrondiney"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/mrondfer"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -142,7 +142,7 @@ footer:
       # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url:
+      url: "https://instagram.com/marcosrond"
 
 
 # Reading Files
@@ -223,6 +223,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  # - jekyll-titles-from-headings  # strip title - marleson
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -269,6 +270,23 @@ compress_html:
   ignore:
     envs: development
 
+titles_from_headings:  # marleson
+  enabled:     true
+  strip_title: true
+  collections: true
+
+
+# Collections
+collections:
+  tutoriais:
+    output: true
+    permalink: /:collection/:path/
+  notas-de-aula:
+    output: true
+    permalink: /:collection/:path/ 
+  problemas-resolvidos:
+    output: true
+    permalink: /:collection/:path/ 
 
 # Defaults
 defaults:
@@ -283,3 +301,33 @@ defaults:
       comments: # true
       share: true
       related: true
+
+# _notas-de-aula
+  - scope:
+      path: ""
+      type: notas-de-aula
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+
+# _tutoriais
+  - scope:
+      path: ""
+      type: tutoriais
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+
+# _problemas-resolvidos
+  - scope:
+      path: ""
+      type: problemas-resolvidos
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
