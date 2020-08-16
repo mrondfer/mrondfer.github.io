@@ -1,0 +1,1021 @@
+I"�<h1 id="ajuda-ubuntu">AJUDA UBUNTU</h1>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[![N</td>
+      <td>Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="https://travis-ci.org/joemccann/dillinger"><img src="https://travis-ci.org/joemccann/dillinger.svg?branch=master" alt="Build Status" /></a></p>
+
+<h2 id="1-instalação-latex">1. INSTALAÇÃO LATEX</h2>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install </span>texlive texlive-latex-extra texlive-lang-portuguese
+<span class="nb">sudo </span>apt-get <span class="nb">install </span>texlive-math-extra
+<span class="nb">sudo </span>apt-get <span class="nb">install </span>tex-common ps2eps latex-xcolor luatex
+<span class="nb">sudo </span>apt-get <span class="nb">install </span>abntex latex-beamer latex2html latex2rtf
+</code></pre></div></div>
+
+<p>ou</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install </span>texmaker
+<span class="nb">sudo </span>apt-get <span class="nb">install </span>ibus-qt4  //para corrigir bug da acentuação
+</code></pre></div></div>
+
+<h2 id="2-dicionário-texmaker">2. DICIONÁRIO TEXMAKER</h2>
+<p>Instale o pacote myspell-pt-br:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>apt-get <span class="nb">install </span>myspell-pt-br
+</code></pre></div></div>
+
+<p>No Texmaker, acesse <strong>Options -&gt; Configure Texmaker</strong>, e na aba Editor selecione o dicionário pt_BR.dic que se encontra no diretório <code class="language-plaintext highlighter-rouge">/usr/share/hunspell</code>
+Para os caracteres, lembrar de usar: <code class="language-plaintext highlighter-rouge">ISO-8859-15</code>.</p>
+
+<h2 id="3-lyx">3. LYX</h2>
+<p>Baixa o instalador <strong>.tar.gz</strong> no baixaki, instala o pacote abaixo:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install </span>libqt4-dev
+./configure <span class="nt">-enable-build-type</span><span class="o">=</span>release
+make
+<span class="nb">sudo </span>make <span class="nb">install</span>
+</code></pre></div></div>
+
+<h2 id="4-matlab-2012">4. MATLAB 2012:</h2>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>mount <span class="nt">-t</span> iso9660 <span class="nt">-o</span> loop ml2012au.iso /home/marleson/montar
+<span class="nb">sudo</span> /home/marleson/matlab/install
+<span class="nb">sudo </span>sh /usr/local/MATLAB/R2012a/bin/matlab
+</code></pre></div></div>
+
+<p>No mainmenu: <code class="language-plaintext highlighter-rouge">/usr/local/MATLAB/R2012a/bin/matlab -desktop</code></p>
+
+<p>Detalhes aqui: http://www.youtube.com/watch?v=EyEcAeQ2waA</p>
+
+<p><strong>Biblioteca importante: (<code class="language-plaintext highlighter-rouge">libc-2.15.so</code> pode estar em lugar diferente)</strong></p>
+
+<p><strong>Em 64bits:</strong></p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo ln</span> <span class="nt">-s</span> /lib/x86_64-linux-gnu/libc-2.15.so /lib64/libc.so.6
+</code></pre></div></div>
+
+<p><strong>Em 32bits:</strong></p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo ln</span> <span class="nt">-s</span> /lib/i386-linux-gnu/libc-2.15.so /lib/libc.so.6
+</code></pre></div></div>
+
+<h2 id="5-maple-13">5. MAPLE 13</h2>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>sh Maple13LinuxX86_64Installer.bin
+/media/CAF8EC6AF8EC566B/torrents/Maple13
+</code></pre></div></div>
+
+<h2 id="6-instalando-java-da-oracle-no-ubuntu-1204">6. INSTALANDO JAVA DA ORACLE NO UBUNTU 12.04</h2>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>add-apt-repository ppa:webupd8team/java
+<span class="nb">sudo </span>apt-get update
+<span class="nb">sudo </span>apt-get <span class="nb">install </span>oracle-jdk7-installer
+</code></pre></div></div>
+
+<h2 id="7-instalação-do-wine">7. INSTALAÇÃO DO WINE</h2>
+
+<p>Antes disso, lembrar de fazer: <code class="language-plaintext highlighter-rouge">sudo apt-get -u upgrade</code></p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>add-apt-repository ppa:ubuntu-wine/ppa <span class="nt">-y</span> <span class="o">&amp;&amp;</span> <span class="nb">sudo </span>apt-get update
+<span class="nb">sudo </span>apt-get <span class="nb">install </span>wine
+</code></pre></div></div>
+
+<h2 id="8-instalação-do-freefem">8. INSTALAÇÃO DO FREEFEM++</h2>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo tar </span>zxvf freefem++-v3.6-ubuntu.tar.gz <span class="nt">-C</span> /                     <span class="o">(</span>BAIXAR PACOTE<span class="o">)</span>
+<span class="nb">sudo tar </span>zxvf freefem++-v3.2-usr-lib.tar.gz <span class="nt">-C</span> / <span class="nt">-k</span>                 <span class="o">(</span>BAIXAR PACOTE<span class="o">)</span>
+</code></pre></div></div>
+
+<p>Para executar um arquivo: <code class="language-plaintext highlighter-rouge">FreeFem++ file.edp</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">nedit -import edp.nedit</code> (primeiro baixar o arquivo edp.nedit em: http://www.freefem.org/ff++/ff++/)</p>
+
+<p><em>Dá para instalar o highlight do Vim por esse link.</em></p>
+
+<h2 id="9-outra-instalação-do-freefem-recomendado">9. Outra instalação do FREEFEM++: (Recomendado)</h2>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install </span>bison curl flex g++ gfortran libx11-dev libice-dev libsm-dev libxau-dev libxdmcp-dev libxrender-dev libxft-dev libxext-dev libxpm-dev libxt-dev m4 make mesa-common-dev libglu1-mesa-dev patch wget mpi-default-bin mpi-default-dev cmake bzip2
+</code></pre></div></div>
+
+<p>Entre na pasta onde está o pacote descompactado <strong><code class="language-plaintext highlighter-rouge">(freefem++-3.19-1)</code></strong>  e digite:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./configure <span class="nt">--enable-download</span>  <span class="o">(</span>observar os erros que aparecem e instalar os pacotes restantes<span class="o">)</span>
+make
+<span class="nb">sudo </span>make <span class="nb">install</span>
+</code></pre></div></div>
+
+<h3 id="91-converter-malha-no-freefem">9.1 Converter malha no FreeFem++</h3>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cvmsh2 gm4092.amdba golfo.msh <span class="nt">-g</span> geogolfo.geo
+</code></pre></div></div>
+
+<h2 id="10-instalação-do-cinnamon">10. INSTALAÇÃO DO CINNAMON</h2>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>add-apt-repository ppa:merlwiz79/cinnamon-ppa
+<span class="nb">sudo </span>add-apt-repository ppa:gwendal-lebihan-dev/cinnamon-stable <span class="o">(</span>de preferência<span class="o">)</span>
+<span class="nb">sudo </span>apt-get update
+<span class="nb">sudo </span>apt-get <span class="nb">install </span>cinnamon
+</code></pre></div></div>
+<ul>
+  <li>Para remover
+  <code class="language-plaintext highlighter-rouge">sh  sudo apt-get install ppa-purge
+  sudo apt-get purge --auto-remove cinnamon
+  sudo apt-get autoremove
+  sudo ppa-purge ppa:gwendal-lebihan-dev/cinnamon-stable
+ </code></li>
+</ul>
+
+<p>Copiar temas para a pasta <code class="language-plaintext highlighter-rouge">/usr/share/themes</code> (dar acesso aos arquivos usando: <code class="language-plaintext highlighter-rouge">sudo nautilus</code>)</p>
+
+<h2 id="11-instalar-o-chrome">11. INSTALAR O CHROME</h2>
+
+<p>Baixe o arquivo <strong>.deb</strong> na página do Google Chrome [LINK]</p>
+
+<p><strong>64 bits:</strong></p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install </span>libnspr4-0d libnss3-1d libxss1 libcurl3
+<span class="nb">sudo </span>dpkg <span class="nt">-i</span> Downloads/google-<span class="k">*</span>
+</code></pre></div></div>
+
+<h2 id="12-executar-arquivos-deb">12. EXECUTAR ARQUIVOS .DEB</h2>
+<ol>
+  <li>Abra o terminal:
+<strong>Ubuntu:</strong> <code class="language-plaintext highlighter-rouge">Aplicativos &gt; Acessórios &gt; Terminal</code></li>
+  <li>Vá até o local onde se encontra o arquivo <strong>.deb</strong>.</li>
+  <li>Execute o comando:
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nv">$ </span><span class="nb">sudo </span>dpkg <span class="nt">-i</span> nome_arquivo.deb
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="13-apagar-uma-pasta">13. APAGAR UMA PASTA</h2>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">rm</span> <span class="nt">-R</span> &lt;diretorio&gt;       <span class="o">(</span>Faz perguntas antes de remover<span class="o">)</span>
+<span class="nb">rm</span> <span class="nt">-rf</span> &lt;diretorio&gt;      <span class="o">(</span>Não faz perguntas antes de remover<span class="o">)</span>
+</code></pre></div></div>
+
+<h2 id="14-listar-diretório">14. LISTAR DIRETÓRIO</h2>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">ls</span> <span class="nt">-lah</span>   <span class="o">(</span>mostra arquivos em KB, MB, etc<span class="o">)</span>
+</code></pre></div></div>
+
+<h2 id="15-editar-bashrc">15. EDITAR .bashrc</h2>
+
+<p>Esse arquivo (<em>.bashrc</em>) está na pasta: <code class="language-plaintext highlighter-rouge">\~</code>.
+Para editar digite^*^:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vim .bashrc
+</code></pre></div></div>
+<p>Para atualizar:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">source</span> .bashrc
+</code></pre></div></div>
+<p>*Vim precisa estar instalado (<code class="language-plaintext highlighter-rouge">sudo apt-get install vim</code>).</p>
+
+<h2 id="16-instalar-adobe-flash-player">16. INSTALAR ADOBE FLASH PLAYER</h2>
+
+<p>I am using this few steps:</p>
+
+<p>Download flash player <strong>.tar.gz</strong></p>
+
+<p>Extract it and you can see usr and <strong>libflashplayer.so</strong></p>
+
+<p>Now open terminal and use this command (in folder where you have extracted usr and libflash…) for copy usr folder:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo cp</span> <span class="nt">-r</span> usr/<span class="k">*</span> /usr
+</code></pre></div></div>
+
+<p>Copy <strong>libflashplayer.so to</strong> <code class="language-plaintext highlighter-rouge">/usr/lib/firefox-addons/plugins</code> with this command (in folder where you have extracted usr and libflash…)</p>
+
+<p><strong>For Firefox:</strong></p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo cp </span>libflashplayer.so /usr/lib/firefox-addons/plugins
+</code></pre></div></div>
+
+<p><strong>For Chromium:</strong></p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo cp </span>libflashplayer.so /usr/lib/chromium-browser/pepper/
+</code></pre></div></div>
+
+<p>Para ver: chrome://plugins</p>
+
+<h2 id="17-modellus">17. MODELLUS</h2>
+
+<p>Site para instalação:
+http://modellus.co/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=10&amp;Itemid=102&amp;lang=en</p>
+
+<hr />
+
+<h1 id="outros-comandos">OUTROS COMANDOS</h1>
+<ol>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">sudo su</code> (entra como root)</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">sudo chmod +x ./install</code></p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">sudo nautilus</code>  (dá acesso total)</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">sudo dpkg -i Downloads/nomedoarquivo</code>  (instalar pacote .deb)</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">tar -zxvf nome_do_pacote.tar.gz</code>  (descompacta arquivo tar.gz)</p>
+  </li>
+  <li>Para encontrar um frase (ou expressão) em arquivos dentro de uma pasta, entre na pasta desejada:
+    <blockquote>
+      <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> /home/<span class="nv">$USER</span>/folder
+</code></pre></div>      </div>
+      <p>e aqui digite o comando abaixo:</p>
+      <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  find ./<span class="k">*</span> <span class="nt">-type</span> f <span class="nt">-exec</span> <span class="nb">grep</span> <span class="nt">-l</span> palavra-ou-expressao-a-pesquisar <span class="o">{}</span> <span class="se">\;</span>
+</code></pre></div>      </div>
+    </blockquote>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">evince [nomedoarquivo.x]</code>  (visualizador de arquivos)</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">$ grep -rin "STRING" ./*</code>   (Localiza a “string” na pasta local)</p>
+  </li>
+  <li>
+    <p>Reinicia o computador: <code class="language-plaintext highlighter-rouge">shutdown -r now</code></p>
+  </li>
+  <li>
+    <p>Desliga o computador: <code class="language-plaintext highlighter-rouge">shutdown -h now</code></p>
+  </li>
+  <li>Permissão de um arquivo:
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">chmod </span>751 &lt;nome da pasta ou arquivo.extensão&gt;
+</code></pre></div>    </div>
+    <p>0 = Nenhuma permissão<br />
+1 = Apenas execução<br />
+2 = Apenas gravação<br />
+3 = Execução e gravação<br />
+4 = Apenas leitura<br />
+5 = Execução e leitura<br />
+6 = Leitura e gravação<br />
+7 = Todos; leitura, gravação e execução</p>
+  </li>
+</ol>
+
+<blockquote>
+  <table>
+    <thead>
+      <tr>
+        <th>Permission</th>
+        <th>rwx</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>7 full</td>
+        <td>111</td>
+      </tr>
+      <tr>
+        <td>6 read and write</td>
+        <td>110</td>
+      </tr>
+      <tr>
+        <td>5 read and execute</td>
+        <td>101</td>
+      </tr>
+      <tr>
+        <td>4 read only</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>3 write and execute</td>
+        <td>011</td>
+      </tr>
+      <tr>
+        <td>2 write only</td>
+        <td>010</td>
+      </tr>
+      <tr>
+        <td>1 execute only</td>
+        <td>001</td>
+      </tr>
+      <tr>
+        <td>0 none</td>
+        <td>000</td>
+      </tr>
+    </tbody>
+  </table>
+</blockquote>
+
+<hr />
+
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">ps</code> (mostra os processos)</li>
+  <li><code class="language-plaintext highlighter-rouge">top</code> (mostra os processos continuamente)
+    <ul>
+      <li>Comandos:</li>
+    </ul>
+    <ul>
+      <li>M – Porcentagem de memória</li>
+      <li>N – Número de identificação de processo</li>
+      <li>P – Porcentagem de uso de UCP</li>
+      <li>T – Tempo de utilização da UCP</li>
+    </ul>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">kill "PID"</code> (encerra o processo com determinado PID)</p>
+  </li>
+  <li>Para deixar o texto no <strong>Terminal do Ubuntu Colorido</strong>, digite:
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>gedit ~/.bashrc
+</code></pre></div>    </div>
+    <p>procure pela linha <code class="language-plaintext highlighter-rouge">#force_color_prompt=yes</code> e tire o símbolo <code class="language-plaintext highlighter-rouge">#</code>. Lembre de atualizar: <code class="language-plaintext highlighter-rouge">$ source .bashrc</code>.</p>
+  </li>
+</ol>
+
+<hr />
+
+<h1 id="dicas">DICAS</h1>
+
+<p><strong>1)</strong> Você pode agendar um download após o outro criando 1 arquivo com todas as URLs desejadas. Crie um arquivo texto <strong><em>“qualquer-nome.txt”</em></strong> assim:</p>
+
+<blockquote>
+  <p>http://www…/arquivo01.tgz<br />
+http://www…/arquivo02.tgz<br />
+http://www…/arquivo03.tgz<br />
+…<br />
+http://www…/arquivo50.tgz</p>
+</blockquote>
+
+<p>E depois rode o wget assim:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget <span class="nt">-c</span> <span class="nt">-i</span> lista qualquer-nome.txt
+</code></pre></div></div>
+
+<p>Ou seja, parâmetro <code class="language-plaintext highlighter-rouge">-i</code> seguido do nome do arquivo com as URLs.</p>
+
+<p><strong>2)</strong> Para gerenciar downloads pelo terminal, use:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>wget <span class="nt">-c</span> <span class="nt">-b</span> <span class="o">[</span>url]
+</code></pre></div></div>
+
+<p>O parametro <code class="language-plaintext highlighter-rouge">-c</code> serve para armazenar o download e reiniciar de onde parou;
+o parametro <code class="language-plaintext highlighter-rouge">-b</code> serve para executar o download em background, sem ocupar o terminal.</p>
+
+<p><strong>3)</strong> Imprimindo pelo Terminal:</p>
+
+<ul>
+  <li>Imprimir um texto: <code class="language-plaintext highlighter-rouge">sh $ lp documento.txt</code></li>
+  <li>Conhecer o nome da impressora: <code class="language-plaintext highlighter-rouge">sh $ lpstat -p -d</code></li>
+  <li>Imprimir em outra impressora: <code class="language-plaintext highlighter-rouge">sh $ lp -d nomedaimpressora documento.txt</code></li>
+  <li>Imprimir duas cópias: <code class="language-plaintext highlighter-rouge">sh $ lp -n 2 documento.txt</code></li>
+  <li>Ver a fila de impressão: <code class="language-plaintext highlighter-rouge">sh $ lpq</code></li>
+  <li>Imprimir páginas 1 e 3 do documento: <code class="language-plaintext highlighter-rouge">sh $ lp -P 1,3 documento.txt</code></li>
+</ul>
+
+<p><strong>4)</strong> Copiando arquivos para/do o servidor:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nv">$ </span>scp arquivo.txt marleson@hunter.mat.ufrgs.br:~
+ <span class="nv">$ </span>scp marleson@hunter.mat.ufrgs.br:~/arquivo.txt
+ <span class="nv">$ </span>scp <span class="nt">-r</span> marleson@hunter.mat.ufrgs.br:~/diretorio
+</code></pre></div></div>
+<ul>
+  <li>Copiando um arquivo simples de uma máquina para outra
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code> servidor1<span class="nv">$ </span>scp maluco@servidor2.example.com:~/arquivo.txt ./
+</code></pre></div>    </div>
+    <p>O comando acima copia o <strong><em>arquivo.txt</em></strong> do HOME (<code class="language-plaintext highlighter-rouge">~</code>) do usuário maluco, do <strong>servidor2</strong> para o diretório atual do <strong>servidor1</strong>. Bem parecido com o comando <code class="language-plaintext highlighter-rouge">cp</code>.</p>
+  </li>
+  <li>Copiando todo um diretório de uma máquina para outra
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code> servidor1<span class="nv">$ </span>scp <span class="nt">-r</span> maluco@servidor2.example.com:/home/maluco /tmp
+</code></pre></div>    </div>
+    <p>Ou seja, copia o diretório maluco do <strong>servidor2</strong> para a <strong>máquina atual</strong>, no diretório <code class="language-plaintext highlighter-rouge">/tmp</code>.</p>
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code> servidor1<span class="nv">$ </span>scp <span class="nt">-Cpr</span> maluco@servidor2.example.com:/home/maluco /tmp
+</code></pre></div>    </div>
+    <p>O parâmetro <code class="language-plaintext highlighter-rouge">-C</code> agora faz a mesma ação anterior, só que agora compactando os dados antes de enviar pela rede. O <em>ssh</em> usa formato <em>gzip</em> e pode-se usar essa opção caso se queira economizar na banda de rede.
+ O parâmetro <code class="language-plaintext highlighter-rouge">-p</code> preserva todos modos e timestamps de arquivos, ideal para fazer uma cópia mais exata.</p>
+  </li>
+</ul>
+
+<p><strong>5)</strong> Comando Convert para imagens:</p>
+
+<ul>
+  <li>Converte figuras:
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>convert arq1.jpg arq1.gif
+</code></pre></div>    </div>
+  </li>
+  <li>Para converter várias imagens numa pastas, use:
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mogrify <span class="nt">-density</span> 150 <span class="nt">-format</span> jpg <span class="k">*</span>.eps
+</code></pre></div>    </div>
+  </li>
+  <li>Para fazer autocrop:
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>convert imagem_input.png <span class="nt">-trim</span> imagem_output.png
+</code></pre></div>    </div>
+    <p><strong><em>Comentário:</em></strong> Para recortar e manter o mesmo nome:</p>
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for </span>file <span class="k">in</span> <span class="k">*</span>.png<span class="p">;</span> <span class="k">do </span>convert <span class="nt">-trim</span> <span class="nv">$file</span> <span class="nv">$file</span><span class="p">;</span> <span class="k">done</span>
+</code></pre></div>    </div>
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for </span>file <span class="k">in</span> <span class="k">*</span>.png<span class="p">;</span> <span class="k">do </span>convert <span class="nt">-crop</span> 929x288+310+0 <span class="nv">$file</span> <span class="nv">$file</span><span class="p">;</span> <span class="k">done</span>
+</code></pre></div>    </div>
+    <p><em>Fonte:</em> (https://linuxacademy.com/blog/linux/cropping-multiple-images-the-same-way-short-tutorial/)</p>
+  </li>
+</ul>
+
+<p><strong>6)</strong> Malha GMSH para FreeFem++:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gmsh <span class="nt">-2</span> <span class="nt">-format</span> mesh <span class="nt">-string</span> <span class="s1">'Mesh.SaveElementTagType=2;'</span> <span class="nt">-o</span> oblong.3.mesh oblong.geo
+
+gawk <span class="nt">-f</span> 3to2.awk oblong.3.mesh <span class="o">&gt;</span> oblong.mesh
+</code></pre></div></div>
+
+<p><strong>7)</strong> Sincronizar arquivos com o HD externo:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rsync <span class="nt">-av</span> <span class="nt">--update</span> <span class="nt">--delete</span> <span class="nt">--progress</span> /home/marleson/ /media/3f72032c-ace3-44f5-af47-8082aa3d523b/Backup/
+rsync <span class="nt">-av</span> <span class="nt">--update</span> <span class="nt">--progress</span> /home/marleson/ /media/3f72032c-ace3-44f5-af47-8082aa3d523b/Backup/
+
+rsync <span class="nt">-av</span> <span class="nt">--update</span> <span class="nt">--progress</span> /home/marleson/Documents/ajudaubuntu.txt marleson@hunter.mat.ufrgs.br:~/ajudaubuntu.txt
+
+rsync <span class="nt">-av</span> <span class="nt">--update</span> <span class="nt">--progress</span> marleson@hunter.mat.ufrgs.br:/home/marleson/Dissertação/Dissertação
+/home/marleson/Documents/MESTRADO<span class="se">\ </span>EM<span class="se">\ </span>MATEMÁTICA/
+</code></pre></div></div>
+
+<p><strong>8)</strong> Remover um pacote:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nt">--purge</span> remove &lt;package&gt;
+</code></pre></div></div>
+
+<p><strong>9)</strong> Programas em Segundo Plano:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Comandos</th>
+      <th>Descrição</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>&amp;</td>
+      <td>Deixa em segundo plano. Caso o processo já esteja em execução, pressione <code class="language-plaintext highlighter-rouge">CTRL + z</code>.</td>
+    </tr>
+    <tr>
+      <td>bg</td>
+      <td>Visualiza o que há em segundo plano;</td>
+    </tr>
+    <tr>
+      <td>fg</td>
+      <td>Retoma o processo ao primeiro plano com o num. fornecido pelo comando <code class="language-plaintext highlighter-rouge">bg</code>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>10)</strong> Nohup</p>
+
+<p>Pra rodar um comando em background e fazer com que o mesmo fique imune a sinais de hangup, usa-se o comando nohup.
+Exemplo de uso:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">nohup</span> ./comando_que_vai_demorar &amp;
+</code></pre></div></div>
+<ul>
+  <li>Para calcular o tempo do comando:
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">nohup </span>bash <span class="nt">-c</span> <span class="s2">"(time ./malha_read malhaquad2.msh)"</span> <span class="nt">-print</span> <span class="o">&gt;</span> file.out &amp;
+<span class="nv">$ </span><span class="nb">nohup </span>bash <span class="nt">-c</span> <span class="s2">"(time ./malha_read mal</span><span class="se">\l</span><span class="s2">im_{</span><span class="se">\d</span><span class="s2">ot{</span><span class="se">\g</span><span class="s2">amma}</span><span class="se">\r</span><span class="s2">ightarrow 0}haquad2.msh) &amp;&gt; timeuse.txt"</span> &amp;
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p><em>Tips:</em></p>
+<ul>
+  <li>http://www.phas.ubc.ca/~mbelab/computer/linux-intro/html/long-calculations.html</li>
+  <li>http://unix.stackexchange.com/questions/22992/how-to-limit-the-number-of-lines-a-commands-output-has-available-in-bash</li>
+</ul>
+
+<p><strong>11)</strong> Alterar tela de fundo do login:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo</span> <span class="nt">-i</span>
+xhost +SI:localuser:lightdm
+su lightdm <span class="nt">-s</span> /bin/bash
+
+<span class="nv">$ </span>gsettings <span class="nb">set </span>com.canonical.unity-greeter draw-user-backgrounds <span class="s1">'false'</span>
+<span class="nv">$ </span>gsettings <span class="nb">set </span>com.canonical.unity-greeter background <span class="s1">'/Caminho-da-imagem.png'</span>
+</code></pre></div></div>
+<p>Para retirar os pontinhos colocados pelo Ubuntu depois de executado os passos acima, digite:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>gsettings <span class="nb">set </span>com.canonical.unity-greeter draw-grid <span class="s1">'false'</span>
+</code></pre></div></div>
+
+<p><strong>12)</strong> Redefinir tela de login:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>dpkg-reconfigure lightdm
+</code></pre></div></div>
+
+<p><strong>13)</strong> Compartilhar pasta no virtual box linux:</p>
+
+<p>Os passos são quase iguais ao caso anterior, escolha as pastas a serem compartilhadas em <code class="language-plaintext highlighter-rouge">Configurações &gt; Pastas Compartilhadas</code>. Ligue a máquina, e acesse <code class="language-plaintext highlighter-rouge">Dispositivos &gt; Instalar Adicionais para Convidado</code>.
+Acesse a unidade de CD que foi criada e execute o arquivo.</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>sh ./VBoxLinuxAdditions<span class="k">*</span>.run
+</code></pre></div></div>
+<p>Crie a pasta a ser montada:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo mkdir</span> /mnt/nome_pasta
+</code></pre></div></div>
+<p>Montando:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>mount <span class="nt">-t</span> vboxsf nome_pasta_compartilhada /mnt/nome_pasta
+</code></pre></div></div>
+
+<p><strong>14)</strong> Matlab no Terminal:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>matlab <span class="nt">-nodesktop</span> <span class="nt">-nosplash</span> &lt; /path_to_file_location/test_run <span class="nt">-logfile</span> test_run.log
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">-nosplash</code> impede que a tela inicial apareça.</p>
+
+<p><strong>15)</strong> Download Vídeos do Youtube:</p>
+<ul>
+  <li>Download:
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install </span>youtube-dl ffmpeg lame libavcodec-extra-53
+</code></pre></div>    </div>
+    <p>Command to download youtube video:</p>
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>youtube-dl <span class="nt">-o</span> nome_do_seu_video.flv http://www.youtube.com/watch?v<span class="o">=</span>CódigoDoVideo
+</code></pre></div>    </div>
+  </li>
+  <li>If you want to download with the best quality (add <code class="language-plaintext highlighter-rouge">-b</code>):
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>youtube-dl <span class="nt">-b</span> <span class="nt">-o</span> nome_do_seu_video.flv http://www.youtube.com/watch?v<span class="o">=</span>CódigoDoVídeo
+</code></pre></div>    </div>
+  </li>
+  <li>If you want to check the available formats:
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>youtube-dl <span class="nt">-F</span> http://www.youtube.com/watch?v<span class="o">=</span>wUln3JuE7iU
+</code></pre></div>    </div>
+    <p>The result will be a list, like that:</p>
+  </li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>num</th>
+      <th>Available formats:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>22</td>
+      <td>mp4	[720x1280]</td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td>webm	[720x1280]</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>flv	[360x640]</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>mp4	[360x640]</td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td>webm	[360x640]</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>flv	[240x400]</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>mp4	[144x176]</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>For example, let’s download the version flv [360x640], use the command:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>youtube-dl <span class="nt">-f</span> 34 http://www.youtube.com/watch?v<span class="o">=</span>wUln3JuE7iU
+</code></pre></div></div>
+
+<ul>
+  <li>To convert a YouTube video to mp3, runing this command on terminal:
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>youtube-dl youtube-url <span class="nt">--extract-audio</span> <span class="nt">--audio-format</span> mp3
+</code></pre></div>    </div>
+    <p><strong>Example:</strong></p>
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>youtube-dl <span class="nt">-o</span> filename.ext http://www.youtube.com/watch?v<span class="o">=</span>QGJuMBdaqIw <span class="nt">--extract-audio</span> <span class="nt">--audio-format</span> mp3
+ffmpeg <span class="nt">-i</span> filename.mp4 OneMoreNight.mp3
+ffmpeg <span class="nt">-i</span> Input.mp4 <span class="nt">-vcodec</span> libx264 <span class="nt">-vprofile</span> baseline <span class="nt">-preset</span> slow <span class="nt">-b</span>:v 500k <span class="nt">-maxrate</span> 500k <span class="nt">-bufsize</span> 500k <span class="nt">-vf</span> <span class="nv">scale</span><span class="o">=</span><span class="nt">-1</span>:360 <span class="nt">-threads</span> 0 <span class="nt">-acodec</span> libfdk_aac <span class="nt">-b</span>:a 96k Output.mp4
+</code></pre></div>    </div>
+  </li>
+  <li>To download a list of video files, create a file and place all the YouTube links that you wish to download:
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>youtube-dl <span class="nt">-a</span> youtube_links.txt
+</code></pre></div>    </div>
+  </li>
+  <li>Convert mov to mp4 :
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ffmpeg <span class="nt">-i</span> MVI_8298.MOV <span class="nt">-strict</span> <span class="nt">-2</span>  output.mp4
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p><strong>16)</strong> Instalação do Eclipse para c++:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>apt-get <span class="nb">install </span>eclipse-cdt
+<span class="nv">$ </span><span class="nb">sudo </span>apt-get <span class="nb">install </span>libgtkmm-2.4-1c2a libgtkmm-2.4-dev build-essential
+</code></pre></div></div>
+
+<p><strong>17)</strong> Gravar comandos num arquivo de texto:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>script arquivo.txt
+</code></pre></div></div>
+<p>Após este comando imediatamente é iniciada uma sessão para gravar os comandos. Para terminar a gravação pressione <code class="language-plaintext highlighter-rouge">CTRL+D</code>. Para continuar gravando no mesmo arquivo utilize o seguinte comando:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>script <span class="nt">-a</span> arquivo.txt
+</code></pre></div></div>
+
+<p><strong>18)</strong> Abrir terminal por uma pasta:
+Instale pelo synaptic: <code class="language-plaintext highlighter-rouge">Nautilus-Open-Terminal</code></p>
+
+<p><em>Terminator:</em>
+https://askubuntu.com/questions/76712/setting-nautilus-open-terminal-to-launch-terminator-rather-than-gnome-terminal</p>
+
+<p><strong>19)</strong> Instalando Plugins no Rhythmbox:
+to add my PPA:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>add-apt-repository ppa:fossfreedom/rhythmbox-plugins
+<span class="nb">sudo </span>apt-get update
+</code></pre></div></div>
+<p>If you want to install all the plugins:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install </span>rhythmbox-plugin-complete
+</code></pre></div></div>
+
+<p><strong>20)</strong> Change Swappiness Value</p>
+<ol>
+  <li>Run terminal</li>
+  <li>Enter following line to see current swappiness value
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cat</span> /proc/sys/vm/swappiness
+</code></pre></div>    </div>
+    <p>(default value in Ubuntu for swappiness is 60)</p>
+  </li>
+  <li>Open file /etc/sysctl.conf in a text editor, I did
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gedit /etc/sysctl.conf
+</code></pre></div>    </div>
+  </li>
+  <li>Enter the following parameter
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Decrease swappiness value</span>
+vm.swappiness<span class="o">=</span>10
+</code></pre></div>    </div>
+  </li>
+  <li>Save the file and restart the computer</li>
+</ol>
+
+<p><strong>21)</strong> Conversar via terminal:</p>
+
+<p>Caso não esteja na mesma máquina, acesse remotamente via ssh e digite:<br />
+<code class="language-plaintext highlighter-rouge">who</code>   (para ver quem está disponível)<br />
+<code class="language-plaintext highlighter-rouge">write &lt;nomeuser&gt; pts/0</code> (para começar a escrever)<br />
+<code class="language-plaintext highlighter-rouge">CTRL + d</code> (para enviar o sinal que terminou de digitar)</p>
+
+<p><strong>22)</strong> Inverter caracters:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo </span>texto-a-ser-invertido | rev
+</code></pre></div></div>
+
+<p><strong>23)</strong> Senha do Licc:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    yppasswd
+</code></pre></div></div>
+
+<p><strong>24)</strong> Instalação CS:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install </span>wine1.3
+</code></pre></div></div>
+
+<ul>
+  <li>Instale via wine:
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cs16full_v4+zbot.exe
+CS16patch_full_V23.exe
+ZBot - SITECS.exe
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p><strong>25)</strong> Fontes da Microsoft</p>
+
+<p>Procure no synaptic: <code class="language-plaintext highlighter-rouge">ttf-mscorefonts-installer</code></p>
+
+<p><strong>26)</strong> Times New Roman em Latex:</p>
+
+<p>http://www.radamir.com/tex/ttf-tex.html<br />
+https://pt.overleaf.com/learn/latex/Font_typefaces</p>
+
+<p>Coloque a font tahoma na pasta c:/windows/fonts</p>
+
+<p><strong>Alguns comandos:</strong></p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bot_add_ct
+bot_add_tr
+bot quota 20
+restart 1
+mp_freezetime 6
+mp_roundtime 5
+mp_timelimit 0
+cl_righthand_1
+
+nmap 127.0.0.1
+ipfw
+</code></pre></div></div>
+
+<p><strong>27)</strong> HABILITAR FORTRAN NO CODEBLOCKS:</p>
+
+<p>Abra: <code class="language-plaintext highlighter-rouge">Settings &gt; Compiler e Debugger</code></p>
+
+<p>Selected compiler:<code class="language-plaintext highlighter-rouge">Gfortran</code><br />
+Na aba <em>Toolchain Executables</em>, escolha:
+Compiler’s installation directory: <code class="language-plaintext highlighter-rouge">/usr/bin</code></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>C Compiler:                 gfortran
+C++ Compiler:               gfortran
+Linker for dynamic libs:    gfortran
+Debugger:                   ar
+Make program:               gfortran
+</code></pre></div></div>
+
+<p><strong>28)</strong> HABILITAR COMPARTILHAMENTO DE PASTA (LINUX &lt;-&gt; WINDOWS)</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>add-apt-repository ppa:samba-team/ppa <span class="o">&amp;&amp;</span> <span class="nb">sudo </span>apt-get update
+<span class="c">#sudo apt-get install system-config-samba</span>
+<span class="nb">sudo </span>apt-get <span class="nb">install </span>samba          <span class="o">(</span>ou busque por SAMBA, na Central de Programas<span class="o">)</span>
+<span class="nb">sudo </span>apt-get <span class="nb">install </span>apache2.2-bin libapache2-mod-dnssd
+</code></pre></div></div>
+
+<p>The two packages you need to install to activate that are: <code class="language-plaintext highlighter-rouge">apache2</code> <code class="language-plaintext highlighter-rouge">libapache2-mod-dnssd</code></p>
+
+<p>Open <code class="language-plaintext highlighter-rouge">Applications -&gt; Accessories -&gt; Terminal</code> and at prompt enter: <code class="language-plaintext highlighter-rouge">sudo gedit /etc/samba/smb.conf</code><br />
+– Uncomment the line <code class="language-plaintext highlighter-rouge">browseable = yes</code> (don’t forget to use find and search for browseable)<br />
+– Uncomment the line <code class="language-plaintext highlighter-rouge">writable = no</code> and change “no” to <code class="language-plaintext highlighter-rouge">yes</code><br />
+– Save the file and close<br />
+– Go back to the Terminal window and enter the following command (remember you can use any name you want): <code class="language-plaintext highlighter-rouge">sudo smbpasswd -a username</code><br />
+– When prompted, enter a password and confirm it.<br />
+– Reload the Samba services using the following command: <code class="language-plaintext highlighter-rouge">sudo /etc/init.d/samba reload</code></p>
+
+<p>http://www.watchingthenet.com/enable-file-sharing-in-ubuntu-using-samba.html</p>
+
+<p><strong>29)</strong> MOSTRAR TODA INFO DO NOTE</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sh sudo lshw
+</code></pre></div></div>
+
+<p><strong>30)</strong> ALTERAR RESOLUÇÃO DE VÍDEO</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Para listar as Resoluções Disponíveis:</span>
+xrandr ou xrandr <span class="nt">-q</span>
+
+<span class="c"># Para definir uma Resolução... segue um exemplo:</span>
+xrandr <span class="nt">-s</span> 1920x1080
+</code></pre></div></div>
+
+<p><strong>31)</strong> INSTALAR ICONES FAENZA</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>add-apt-repository ppa:tiheum/equinox
+<span class="nb">sudo </span>apt-get update
+<span class="nb">sudo </span>apt-get <span class="nb">install </span>faenza-icon-theme
+</code></pre></div></div>
+<p>Depois de baixado e instalado, temos que usar o Gnome Tweak Tool:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install </span>gnome-tweak-tool
+</code></pre></div></div>
+
+<p><strong>32)</strong> INSTALANDO PATHOGEN.VIM</p>
+
+<p>Para instalar o <code class="language-plaintext highlighter-rouge">Pathogen.vim</code>, basta executar o comando abaixo no terminal:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir</span> <span class="nt">-p</span> ~/.vim/autoload ~/.vim/bundle<span class="p">;</span> <span class="se">\</span>
+curl <span class="nt">-Sso</span> ~/.vim/autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+</code></pre></div></div>
+
+<p>Este comando cria duas pastas (autoload e bundle) dentro da pasta <em>.vim</em> (se a pasta <em>.vim</em> não existir ela é criada), entre dentro da pasta <em>~/.vim/autoload</em> e faça o download do arquivo <em>pathogen.vim</em> via <em>curl</em> do repositório remoto no <a href="https://github.com/">GitHub</a>.</p>
+
+<p><strong>Obs.:</strong> Se estiver utilizando Windows substitua no comando acima a ocorrência <code class="language-plaintext highlighter-rouge">~/.vim</code> por <code class="language-plaintext highlighter-rouge">~\vimfiles</code>.</p>
+
+<p>Agora temos que adicionar a linha abaixo no arquivo <code class="language-plaintext highlighter-rouge">~/.vimrc</code>:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>execute pathogen#infect<span class="o">()</span>
+</code></pre></div></div>
+
+<p>Com essa linha adicionada no <code class="language-plaintext highlighter-rouge">~/.vimrc</code> o <em>Pathogen.vim</em> manipula em tempo real o caminho dos plugins que você adicionar para o <em>Vim</em>. Agora precisamos testar se o <em>Pathogen.vim</em> está funcionado, então vamos instalar o plugin <em>Emmet.vim</em> dentro da arquitetura de pasta do <em>Pathogen.vim</em>.</p>
+
+<hr />
+<p>33) Instalar o Emmet.vim utilizando o Pathogen.vim
+—————————————————
+cd ~/.vim/bundle; <br />
+git clone https://github.com/mattn/emmet-vim.git</p>
+
+<p>O plugin Emmet.vim já está instalado, para atualizar execute o comando abaixo:</p>
+
+<p>cd ~/.vim/bundle/emmet-vim; <br />
+git pull</p>
+
+<hr />
+<p>34) Corrigir imagem Webcam Black&amp;White
+—————————————————
+Instalar ‘Video4Linux Control Painel’ (ou biblioteca v4l)</p>
+
+<hr />
+<p>35) My Weather Indicator
+—————————————————
+To install it in Ubuntu 14.04, use the following commands:
+sudo add-apt-repository ppa:atareao/atareao
+sudo apt-get update
+sudo apt-get install my-weather-indicator</p>
+
+<hr />
+<p>36) Pidgin Indicator
+—————————————————
+sudo add-apt-repository ppa:nilarimogard/webupd8
+sudo apt-get update
+sudo apt-get install pidgin-indicator</p>
+
+<hr />
+<p>37) Gnuplot syntax highlighting gedit
+—————————————————
+To extension .plt;
+Now, to install the gnuplot style sheet, download the XML file first: gnuplot.lang
+https://wiki.gnome.org/Projects/GtkSourceView/LanguageDefinitions?action=AttachFile&amp;do=get&amp;target=gnuplot.lang
+sudo cp gnuplot.lang /usr/share/gtksourceview-3.0/language-specs/
+sudo chmod 644 /usr/share/gtksourceview-3.0/language-specs/gnuplot.lang</p>
+
+<p>Now restart gedit and you should be able to choose gnuplot highlighting.</p>
+
+<hr />
+<p>38) Install gnuplot
+—————————————————
+Installation for Gnuplot Version 4.6 patchlevel 5 with wxt terminal is necessary to add the libraries:
+sudo apt-get install build-essential (for c++)
+libwxgtk2.8-dev
+libcairo2-dev
+libpangomm-1.4-dev
+before to run ./configure &gt; make &gt; sudo make install.</p>
+
+<hr />
+<p>39) Download all files in a directory using WGET
+—————————————————
+To download all files in the directory using WGET in Linux, the following command can be used</p>
+
+<p>wget -H -r –level=1 -k -p http://www.tldp.org/HOWTO/Serial-Programming-HOWTO/</p>
+
+<p>-r, –recursive
+Specify recursive download.
+-l, –level=NUMBER
+Maximum recursion depth (inf or 0 for infinite).
+-k, –convert-links
+Make links in downloaded HTML point to local files.
+-p, –page-requisites
+Get all images, etc. needed to display HTML page.</p>
+
+<hr />
+<p>40) Replacing all occurrences of one string
+—————————————————
+Substitui a string “palavravelha” pela string “palavranova” em todos os arquivo encontrados.
+Inclusive nos arquivos escondidos em subdiretórios.</p>
+
+<p>Comando: find . -type f -exec sed -i ‘s/palavravelha/palavranova/g’ {} +</p>
+
+<p>Existe ainda uma forma mais simples, a nao-recursiva. Para sustituir em todos os arquivos.
+Por exemplo:  sed -i – ‘s/palavravelha/palavranova/g’ *</p>
+
+<p>ou em um único arquivo.
+Por exemplo:  sed -i – ‘s/palavravelha/palavranova/g’ file.txt</p>
+
+<hr />
+<p>41) UNIX setup SSH with DSA public key authentication
+——————————————————-
+In the current user, type:
+	ssh-keygen -t dsa
+	(do not put password in this process, just press enter key)
+Now copy file ~/.ssh/id_dsa.pub on Machine #1 to remote server (cluster) as ~/.ssh/authorized_keys:
+	scp ~/.ssh/id_dsa.pub user@jerry:.ssh/
+In the remote server, enter in the directory “.ssh”:
+	cd ~/.ssh
+and rename
+	cat id_rsa.pub » authorized_keys</p>
+
+<p>done!</p>
+
+<hr />
+<p>42) Shortcut configuration
+——————————————————-
+You can set up a connection shortcut by creating a ~/.ssh/config file on your local computer and adding your server and key details by using a text editor.
+Add the following text to the ~/.ssh/config file, changing the values to match your server information:</p>
+
+<p>Host shortcutName
+HostName serverAddressOrIPAddress <br />
+User remoteUsername
+IdentityFile /path/to/appropriate/ssh/rsa/private/key</p>
+
+<p>Each entry describes a feature of the server:</p>
+
+<p>Host: A shortcut name you will use to tell SSH to use this connection
+HostName: The address of the server you will connect to
+User: The name of the user account to connect to on the server
+IdentityFile: The location of the private key file (id_rsa)</p>
+
+<p>After you set up the config file, connect to the server by using your shortcut name with SSH, as follows:
+ssh shortcutName</p>
+
+<hr />
+<p>43) Matplotlib (Library to python)
+——————————————————-
+http://nbviewer.ipython.org/github/sukhbinder/VisualizationInPython/blob/master/Quick%20Intro%20to%20%202D%20and%203D%20Visualization%20in%20Python.ipynb</p>
+
+<hr />
+<p>44) Linux com SSD
+——————————————————-
+http://www.mysolutions.it/linux-ssd-solid-state-drive/
+http://www.edivaldobrito.com.br/como-ativar-o-trim-em-discos-ssd-no-ubuntu-linux/</p>
+
+<hr />
+<p>45) Montar cartão SD:
+——————————————————-
+Antes de espetar o SD Card no notebook digite:</p>
+
+<h1 id="modprobe-mmc_block">modprobe mmc_block</h1>
+<h1 id="modprobe-wbsd">modprobe wbsd</h1>
+
+<p>Daí abra o messages num terminal:</p>
+
+<h1 id="tail--f-varlogmessages">tail -f /var/log/messages</h1>
+
+<p>Plugue o card e verifique qual dispositivo foi encontrado. Daí é só montar, ex:</p>
+
+<h1 id="mount-devmmcblk0p1-mnt">mount /dev/mmcblk0p1 /mnt</h1>
+
+<hr />
+<p>46) Exfat on SDXC cards
+——————————————————-
+sudo add-apt-repository ppa:relan/exfat (probably not necessary)
+sudo apt-get update
+sudo apt-get install exfat-fuse exfat-utils</p>
+
+<hr />
+<p>47) Alguns maneiras de reiniciar o wifi
+——————————————————-
+sudo service networking restart
+sudo /etc/init.d/networking restart</p>
+
+<p>sudo ifconfig wlan0 down
+sudo ifconfig wlan0 up
+ (you need to replace ‘wlan0’ by the correct name of your wireless)</p>
+
+<p>sudo service network-manager restart</p>
+
+<hr />
+<p>48) Backup antes de fazer uma atualização de UBUNTU
+—————————————————
+FONTE: http://www.diolinux.com.br/2014/01/aptik-faca-backup-dos-seus-temas-ppas-e.html</p>
+
+<p>sudo apt-add-repository -y ppa:teejee2008/ppa
+sudo apt-get update
+sudo apt-get install aptik</p>
+
+<hr />
+<p>49) Latex to Inkscape
+———————</p>
+
+<p><code class="language-plaintext highlighter-rouge">sudo apt-get install pstoedit</code></p>
+
+<p>Talvez seja necessário insatalar alguns módulos, por exemplo:</p>
+
+<ul>
+  <li>Se o Inkscape rodar com pythom 3, faça:</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">sudo apt-get install python3-lxml</code><br />
+e/ou<br />
+<code class="language-plaintext highlighter-rouge">sudo apt-get install python3-tk</code></p>
+
+<hr />
+<p>50) Recuperar SD
+—————-</p>
+
+<p>sudo apt-get install testdisk
+sudo testdisk</p>
+
+<p>http://sejalivre.org/recuperando-cartao-sd-danificado-no-ubuntu/</p>
+
+<hr />
+<p>51) Formatar pendrive
+———————-</p>
+
+<p>mkfs.vfat -I /dev/sdc</p>
+
+<p>https://www.techtudo.com.br/dicas-e-tutoriais/noticia/2011/12/como-formatar-um-pen-drive-no-terminal-do-linux.html</p>
+
+<hr />
+<p>52) Instalando GSL (GNU Scientific Library)
+——————————————-
+Baixar: GSL-2.5 (ou superior)
+./configure
+make
+make install</p>
+
+<p>Pacotes adicionais:
+sudo apt-get install libgsl2 libgsl-dbg libgsl-dev</p>
+
+<hr />
+<p>52) Como encontrar pacotes pendentes
+——————————————-
+sudo apt-get install apt-file</p>
+
+<p>apt-file search Qt5CoreConfig.cmake</p>
+
+<p>================================================================================
+http://www.marcosmonteiro.com.br/index.php?option=com_content&amp;view=article&amp;id=656:como-compartilhar-pastas-em-rede-entre-linux-e-windows&amp;catid=41:so-gnu-linux&amp;Itemid=69</p>
+
+<p>http://forum.gamevicio.com/topico/2009/07/counter-strike-1-6-radio-nao-funciona/
+http://br.answers.yahoo.com/question/index?qid=20080825044829AAMjLJQ</p>
+
+<p>passwd: flaviono9</p>
+
+<p>http://mirnazim.org/writings/vim-plugins-i-use/</p>
+
+<p>m4s5ho0w_http://www.phyast.pitt.edu/~zov1/</p>
+
+<p>Dw5No41aa1</p>
+
+<p>http://people.clarkson.edu/~jhowell/math/</p>
+
+:ET

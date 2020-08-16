@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-16T12:34:24-03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marcos Ferriera - Website</title><subtitle>Site em construção</subtitle><author><name>Marcos Ferreira</name><email>marcosferreira@pelotas.ifsul.edu.br</email></author><entry><title type="html">Torneio de Harvard - MIT</title><link href="http://localhost:4000/problema-MIT/" rel="alternate" type="text/html" title="Torneio de Harvard - MIT" /><published>2020-08-15T00:00:00-03:00</published><updated>2020-08-15T00:00:00-03:00</updated><id>http://localhost:4000/problema-MIT</id><content type="html" xml:base="http://localhost:4000/problema-MIT/">&lt;h1 id=&quot;problema&quot;&gt;Problema&lt;/h1&gt;
+
+&lt;p&gt;No quadrilátero $\mathsf{ABCD}$, $\mathsf{D\hat{A}C = 98^\circ}$, $\mathsf{D\hat{B}C = 70^\circ}$ e $\mathsf{BC = AD}$. Encontre $\mathsf{A\hat{C}D}$.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Solução.&lt;/strong&gt;
+Aplicando a lei dos senos nos triângulo BCD, temos&lt;/p&gt;
+
+\[\mathsf{\frac{\overline{CD}}{\sin ~ 82^\circ} = \frac{\overline{BC}}{\sin ~ 28^\circ}}.\]
+
+&lt;p&gt;Como $\mathsf{BC = AD}$, temos que&lt;/p&gt;
+
+&lt;!--- $$\mathsf{ \frac{\overline{CD}}{\sin ~ 82^\circ} = \frac{\overline{BC}}{\sin ~ 28^\circ} = \frac{\overline{AD}}{\sin ~ 28^\circ} }.$$ ---&gt;
+
+&lt;p&gt;\begin{equation}\label{eq:1}
+\mathsf{ \frac{\overline{CD}}{\sin ~ 82^\circ} = \frac{\overline{BC}}{\sin ~ 28^\circ} = \frac{\overline{AD}}{\sin ~ 28^\circ} }.
+\end{equation}&lt;/p&gt;
+
+&lt;p&gt;Aplicando novamente a lei dos senos, mas agora no triângulo ACD, segue que&lt;/p&gt;
+
+\[\mathsf{ \frac{\overline{AD}}{\sin ~ A\hat{C}D} = \dfrac{\overline{CD}}{\sin ~ 98^\circ}}.\]
+
+&lt;p&gt;Agora, note que a soma de $\mathsf{98^\circ}$ com $\mathsf{82^\circ}$ é igual a $\mathsf{ 180^\circ }$. Isso quer dizer que eles correspondem a medidas de ângulos suplementares. Daí,&lt;/p&gt;
+
+\[\mathsf{ \sin~82^\circ = \sin~98^\circ }\]
+
+&lt;p&gt;e
+&lt;!--- $$\mathsf{ \frac{\overline{AD}}{\sin ~ A\hat{C}D} = \frac{\overline{CD}}{\sin ~ 98^\circ} = \frac{\overline{CD}}{\sin ~ 82^\circ} }.$$ ---&gt;&lt;/p&gt;
+
+&lt;p&gt;\begin{equation}\label{eq:2}
+\mathsf{ \frac{\overline{AD}}{\sin ~ A\hat{C}D} = \frac{\overline{CD}}{\sin ~ 98^\circ} = \frac{\overline{CD}}{\sin ~ 82^\circ} }.
+\end{equation}&lt;/p&gt;
+
+&lt;p&gt;Portanto, das equações \eqref{eq:1} e \eqref{eq:2} , concluímos que&lt;/p&gt;
+
+\[\mathsf{A\hat{C}D = 28^\circ}.\]</content><author><name>Marcos Ferreira</name><email>marcosferreira@pelotas.ifsul.edu.br</email></author><summary type="html">Problema</summary></entry></feed>
