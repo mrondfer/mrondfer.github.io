@@ -1,15 +1,26 @@
 ---
-title: Torneio de Harvard - MIT
-layout: collection
-collection: problemas-resolvidos
-entries_layout: grid
+title: Um problema do torneio de Harvard - MIT
+excerpt: "Um prolema resolvido do torneio de Harvard."
 classes: wide
-mathjax: true
 date: 2020-08-15
+header:
+    teaser: /assets/imagens/img-torneio-mit.png
+mathjax: true
+categories:
+    - Problemas resolvidos
 tags: [problema, matemática, triângulo,trigonometria, lei dos senos, ângulos suplementares]
+last_modified_at: 2020-08-20
 ---
 
 **Problema.** No quadrilátero $\mathsf{ABCD}$, $\mathsf{D\hat{A}C = 98^\circ}$, $\mathsf{D\hat{B}C = 70^\circ}$ e $\mathsf{\overline{BC} = \overline{AD} }$. Encontre $\mathsf{A\hat{C}D}$.  
+
+<!--
+<figure>
+	<a href="/assets/imagens/img-torneio-mit.png"><img src="/assets/imagens/img-torneio-mit.png"></a>
+</figure>-->
+
+![img-torneio-mit]({{ site.url }}{{ site.baseurl }}/assets/imagens/img-torneio-mit.png){: .align-center}
+
 
 **Solução.**
 Aplicando a lei dos senos nos triângulo BCD, temos  
