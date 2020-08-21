@@ -10,4 +10,10 @@ var store = [{
         "tags": ["problema","matemática","triângulo","trigonometria","lei dos senos","ângulos suplementares"],
         "url": "http://localhost:4000/problemas-resolvidos/2020-08-15-problema-MIT/",
         "teaser": "http://localhost:4000/assets/imagens/img-torneio-mit.png"
+      },{
+        "title": "Área constante de um triângulo",
+        "excerpt":"Problema. Considere dois quadrado colados, como mostrado na figura abaixo. Determine a área do triângulo em destaque. Solução. Antes de calcular a área do triângulo em destaque, vamos chamar o lado do quandrado maior de $x$ e considerar $x&gt;\\sqrt{2}$. Agora, observe que a área total da figura acima é igual...","categories": ["Problemas resolvidos"],
+        "tags": ["problema","matemática","área","triângulo"],
+        "url": "http://localhost:4000/problemas-resolvidos/2020-08-20-area-do-triangulo/",
+        "teaser": "http://localhost:4000/assets/imagens/img-area-do-triangulo.png"
       },]

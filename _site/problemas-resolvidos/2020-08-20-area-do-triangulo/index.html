@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Um problema do torneio de Harvard - MIT - Marcos Ferriera - Website</title>
-<meta name="description" content="Um prolema resolvido do torneio de Harvard.">
+<!-- begin _includes/seo.html --><title>Área constante de um triângulo - Marcos Ferriera - Website</title>
+<meta name="description" content="Área de um triângulo.">
 
 
   <meta name="author" content="Marcos Ferreira">
@@ -19,27 +19,27 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Marcos Ferriera - Website">
-<meta property="og:title" content="Um problema do torneio de Harvard - MIT">
-<meta property="og:url" content="http://localhost:4000/problemas-resolvidos/2020-08-15-problema-MIT/">
+<meta property="og:title" content="Área constante de um triângulo">
+<meta property="og:url" content="http://localhost:4000/problemas-resolvidos/2020-08-20-area-do-triangulo/">
 
 
-  <meta property="og:description" content="Um prolema resolvido do torneio de Harvard.">
+  <meta property="og:description" content="Área de um triângulo.">
 
 
 
-  <meta property="og:image" content="http://localhost:4000/assets/imagens/img-torneio-mit.png">
+  <meta property="og:image" content="http://localhost:4000/assets/imagens/img-area-do-triangulo.png">
 
 
 
   <meta name="twitter:site" content="@mrondiney">
-  <meta name="twitter:title" content="Um problema do torneio de Harvard - MIT">
-  <meta name="twitter:description" content="Um prolema resolvido do torneio de Harvard.">
-  <meta name="twitter:url" content="http://localhost:4000/problemas-resolvidos/2020-08-15-problema-MIT/">
+  <meta name="twitter:title" content="Área constante de um triângulo">
+  <meta name="twitter:description" content="Área de um triângulo.">
+  <meta name="twitter:url" content="http://localhost:4000/problemas-resolvidos/2020-08-20-area-do-triangulo/">
 
   
     <meta name="twitter:card" content="summary">
     
-      <meta name="twitter:image" content="http://localhost:4000/assets/imagens/img-torneio-mit.png">
+      <meta name="twitter:image" content="http://localhost:4000/assets/imagens/img-area-do-triangulo.png">
     
   
 
@@ -47,7 +47,7 @@
 
 
 
-  <meta property="article:published_time" content="2020-08-15T00:00:00-03:00">
+  <meta property="article:published_time" content="2020-08-20T00:00:00-03:00">
 
 
 
@@ -60,7 +60,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/problemas-resolvidos/2020-08-15-problema-MIT/">
+<link rel="canonical" href="http://localhost:4000/problemas-resolvidos/2020-08-20-area-do-triangulo/">
 
 
 
@@ -309,15 +309,15 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Um problema do torneio de Harvard - MIT">
-    <meta itemprop="description" content="Um prolema resolvido do torneio de Harvard.">
-    <meta itemprop="datePublished" content="2020-08-15T00:00:00-03:00">
+    <meta itemprop="headline" content="Área constante de um triângulo">
+    <meta itemprop="description" content="Área de um triângulo.">
+    <meta itemprop="datePublished" content="2020-08-20T00:00:00-03:00">
     <meta itemprop="dateModified" content="2020-08-20T00:00:00-03:00">
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Um problema do torneio de Harvard - MIT
+          <h1 id="page-title" class="page__title" itemprop="headline">Área constante de um triângulo
 </h1>
           
 
@@ -327,46 +327,45 @@
 
       <section class="page__content" itemprop="text">
         
-        <p><strong>Problema.</strong> No quadrilátero $\mathsf{ABCD}$, $\mathsf{D\hat{A}C = 98^\circ}$, $\mathsf{D\hat{B}C = 70^\circ}$ e $\mathsf{\overline{BC} = \overline{AD} }$. Encontre $\mathsf{A\hat{C}D}$.</p>
+        <p><strong>Problema.</strong> Considere dois quadrado colados, como mostrado na figura abaixo. Determine a área do triângulo em destaque.</p>
 
-<!--
-<figure>
-	<a href="/assets/imagens/img-torneio-mit.png"><img src="/assets/imagens/img-torneio-mit.png"></a>
-</figure>-->
+<p><img src="http://localhost:4000/assets/imagens/img-area-do-triangulo.png" alt="img-area-do-triangulo" class="align-center" /></p>
 
-<p><img src="http://localhost:4000/assets/imagens/img-torneio-mit.png" alt="img-torneio-mit" class="align-center" /></p>
+<p><strong>Solução.</strong> Antes de calcular a área do triângulo em destaque, vamos chamar o lado do quandrado maior de $x$ e considerar $x&gt;\sqrt{2}$.</p>
 
-<p><strong>Solução.</strong>
-Aplicando a lei dos senos nos triângulo BCD, temos</p>
+<p>Agora, observe que a área total da figura acima é igual soma das áreas dos quadrados, ou seja,</p>
 
-\[\mathsf{\frac{\overline{CD}}{sen ~ 82^\circ} = \frac{\overline{BC}}{sen ~ 28^\circ}}.\]
+\[A_{total} = x^2 + 2.\]
 
-<p>Como $\mathsf{ \overline{BC} = \overline{AD} }$, temos que</p>
+<p>Para determinarmos a área do triângulo em destaque, basta subtrair da área total a área dos outros triângulo menores, (<a href="/assets/imagens/img-area-do-triangulo2.png">cf. a figura</a>),</p>
 
-<!--- $$\mathsf{ \frac{\overline{CD}}{\sin ~ 82^\circ} = \frac{\overline{BC}}{\sin ~ 28^\circ} = \frac{\overline{AD}}{\sin ~ 28^\circ} }.$$ --->
+<p><img src="http://localhost:4000/assets/imagens/img-area-do-triangulo2.png" alt="img-area-do-triangulo2" class="align-center" /></p>
 
-<p>\begin{equation}\label{eq:1}
-\mathsf{ \frac{\overline{CD}}{sen ~ 82^\circ} = \frac{\overline{BC}}{sen ~ 28^\circ} = \frac{\overline{AD}}{sen ~ 28^\circ} }.
-\end{equation}</p>
+<p>que são dadas por:</p>
 
-<p>Aplicando novamente a lei dos senos, mas agora no triângulo ACD, segue que</p>
+<ul>
+  <li>
+    <p>$A_1 = 1 u.a;$</p>
+  </li>
+  <li>
+    <p>$A_2 = \dfrac{x(x+\sqrt{2})}{2} = \dfrac{x^2+\sqrt{2}x}{2}\, u.a;$</p>
+  </li>
+  <li>
+    <p>$A_3 = \dfrac{x(x-\sqrt{2})}{2} = \dfrac{x^2-\sqrt{2}x}{2}\, u.a.$</p>
+  </li>
+</ul>
 
-\[\mathsf{ \frac{\overline{AD}}{sen ~ A\hat{C}D} = \dfrac{\overline{CD}}{sen ~ 98^\circ}}.\]
+<p>Assim, segue que</p>
 
-<p>Agora, note que a soma de $\mathsf{98^\circ}$ com $\mathsf{82^\circ}$ é igual a $\mathsf{ 180^\circ }$. Isso quer dizer que eles correspondem a medidas de ângulos suplementares. Daí,</p>
+\[A_T = A_{total} - A_1 - A_2 - A_3\]
 
-\[\mathsf{ sen~82^\circ = sen~98^\circ }\]
+\[A_T = x^2 + 2 -1 - \frac{(x^2+\sqrt{2}x)}{2} - \frac{(x^2-\sqrt{2}x)}{2}.\]
 
-<p>e
-<!--- $$\mathsf{ \frac{\overline{AD}}{\sin ~ A\hat{C}D} = \frac{\overline{CD}}{\sin ~ 98^\circ} = \frac{\overline{CD}}{\sin ~ 82^\circ} }.$$ ---></p>
+\[A_T = x^2 + 1 - \frac{x^2}{2} - \frac{\sqrt{2}\,x}{2} - \frac{x^2}{2} + \frac{\sqrt{2}x}{2}.\]
 
-<p>\begin{equation}\label{eq:2}
-\mathsf{ \frac{\overline{AD}}{sen ~ A\hat{C}D} = \frac{\overline{CD}}{sen ~ 98^\circ} = \frac{\overline{CD}}{sen ~ 82^\circ} }.
-\end{equation}</p>
+<p>Portanto,</p>
 
-<p>Portanto, das equações \eqref{eq:1} e \eqref{eq:2} , concluímos que</p>
-
-\[\mathsf{A\hat{C}D = 28^\circ}.\]
+\[A_T = 1.\]
 
         
       </section>
@@ -387,10 +386,6 @@ Aplicando a lei dos senos nos triângulo BCD, temos</p>
     
       
       
-      <a href="/tags/#lei-dos-senos" class="page__taxonomy-item" rel="tag">lei dos senos</a><span class="sep">, </span>
-    
-      
-      
       <a href="/tags/#matem%C3%A1tica" class="page__taxonomy-item" rel="tag">matemática</a><span class="sep">, </span>
     
       
@@ -399,15 +394,11 @@ Aplicando a lei dos senos nos triângulo BCD, temos</p>
     
       
       
-      <a href="/tags/#trigonometria" class="page__taxonomy-item" rel="tag">trigonometria</a><span class="sep">, </span>
-    
-      
-      
       <a href="/tags/#tri%C3%A2ngulo" class="page__taxonomy-item" rel="tag">triângulo</a><span class="sep">, </span>
     
       
       
-      <a href="/tags/#%C3%A2ngulos-suplementares" class="page__taxonomy-item" rel="tag">ângulos suplementares</a>
+      <a href="/tags/#%C3%A1rea" class="page__taxonomy-item" rel="tag">área</a>
     
     </span>
   </p>
@@ -445,22 +436,22 @@ Aplicando a lei dos senos nos triângulo BCD, temos</p>
     <h4 class="page__share-title">Compartilhe</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?via=mrondiney&text=Um+problema+do+torneio+de+Harvard+-+MIT%20http%3A%2F%2Flocalhost%3A4000%2Fproblemas-resolvidos%2F2020-08-15-problema-MIT%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartilhe Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?via=mrondiney&text=%C3%81rea+constante+de+um+tri%C3%A2ngulo%20http%3A%2F%2Flocalhost%3A4000%2Fproblemas-resolvidos%2F2020-08-20-area-do-triangulo%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartilhe Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fproblemas-resolvidos%2F2020-08-15-problema-MIT%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartilhe Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fproblemas-resolvidos%2F2020-08-20-area-do-triangulo%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartilhe Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fproblemas-resolvidos%2F2020-08-15-problema-MIT%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartilhe LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fproblemas-resolvidos%2F2020-08-20-area-do-triangulo%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartilhe LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="#" class="pagination--pager disabled">Anterior</a>
+      <a href="/problemas-resolvidos/2020-08-15-problema-MIT/" class="pagination--pager" title="Um problema do torneio de Harvard - MIT
+">Anterior</a>
     
     
-      <a href="/problemas-resolvidos/2020-08-20-area-do-triangulo/" class="pagination--pager" title="Área constante de um triângulo
-">Próxima</a>
+      <a href="#" class="pagination--pager disabled">Próxima</a>
     
   </nav>
 
