@@ -9,39 +9,56 @@ mathjax: true
 categories:
     - Problemas resolvidos
 tags: [problema, matemática, área, triângulo]
-last_modified_at: 2020-08-20
+last_modified_at: 2020-08-22
 ---
 
-**Problema.** Considere dois quadrado colados, como mostrado na figura abaixo. Determine a área do triângulo em destaque.
+**Problema.** Considere dois quadrado "colados", como mostrado na [Figura 1](#figura1). Determine a área do triângulo em destaque.
 
-![img-area-do-triangulo]({{ site.url }}{{ site.baseurl }}/assets/imagens/img-area-do-triangulo.png){: .align-center}
+<a id = "figura1"></a>
+<figure style="width: 300px" class="align-center">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/imagens/img-area-do-triangulo.png" alt="">
+    <figcaption >Figura 1.</figcaption>
+</figure>
 
-**Solução.** Antes de calcular a área do triângulo em destaque, vamos chamar o lado do quandrado maior de $x$ e considerar $x>\sqrt{2}$.
+<!--![img-area-do-triangulo]({{ site.url }}{{ site.baseurl }}/assets/imagens/img-area-do-triangulo.png){: .align-center}-->
 
-Agora, observe que a área total da figura acima é igual soma das áreas dos quadrados, ou seja,
+**Solução.** Antes de calcular a área do triângulo, vamos denotar por $x$ a medida do lado do quandrado maior. Além disso, para os cálculos devemos assumir $x>\sqrt{2}$.
+
+Agora, observe que a área total da figura é igual a soma das áreas dos quadrados, ou seja,
 
 $$A_{total} = x^2 + 2.$$
 
-Para determinarmos a área do triângulo em destaque, basta subtrair da área total a área dos outros triângulo menores, ([cf. a figura](/assets/imagens/img-area-do-triangulo2.png)),
+Para determinarmos a área do triângulo desejada, basta subtrair da área total a área dos triângulo menores $A_1$, $A_2$ e $A_3$ (veja a [Figura 2](#figura2)) que são dadas por:
 
-![img-area-do-triangulo2]({{ site.url }}{{ site.baseurl }}/assets/imagens/img-area-do-triangulo2.png){: .align-center}
+* $A_1 = 1;$
 
-que são dadas por:
+* $A_2 = \dfrac{x(x+\sqrt{2})}{2} = \dfrac{x^2+\sqrt{2}x}{2};$
 
-* $A_1 = 1 u.a;$
+* $A_3 = \dfrac{x(x-\sqrt{2})}{2} = \dfrac{x^2-\sqrt{2}x}{2}.$
 
-* $A_2 = \dfrac{x(x+\sqrt{2})}{2} = \dfrac{x^2+\sqrt{2}x}{2}\, u.a;$
+<a id = "figura2"></a>
+<figure style="width: 300px" class="align-center">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/imagens/img-area-do-triangulo2.png" alt="">
+    <figcaption >Figura 2.</figcaption>
+</figure>
 
-* $A_3 = \dfrac{x(x-\sqrt{2})}{2} = \dfrac{x^2-\sqrt{2}x}{2}\, u.a.$
+<!--
+<a id="figura2">
+    ![img-area-do-triangulo2]({{ site.url }}{{ site.baseurl }}/assets/imagens/img-area-do-triangulo2.png){: .align-center}
+</a>-->
+
+
 
 Assim, segue que
 
 $$A_T = A_{total} - A_1 - A_2 - A_3$$
 
-$$A_T = x^2 + 2 -1 - \frac{(x^2+\sqrt{2}x)}{2} - \frac{(x^2-\sqrt{2}x)}{2}.$$
+$$A_T = x^2 + 2 -1 - \frac{(x^2+\sqrt{2}x)}{2} - \frac{(x^2-\sqrt{2}x)}{2}$$
 
 $$A_T = x^2 + 1 - \frac{x^2}{2} - \frac{\sqrt{2}\,x}{2} - \frac{x^2}{2} + \frac{\sqrt{2}x}{2}.$$
 
 Portanto,
 
-$$A_T = 1.$$
+$$A_T = 1 \, u.a,$$  
+
+onde $u.a$ significa __unidade de área__.

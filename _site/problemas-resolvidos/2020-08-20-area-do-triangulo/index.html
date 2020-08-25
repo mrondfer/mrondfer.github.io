@@ -51,7 +51,7 @@
 
 
 
-  <meta property="article:modified_time" content="2020-08-20T00:00:00-03:00">
+  <meta property="article:modified_time" content="2020-08-22T00:00:00-03:00">
 
 
 
@@ -312,7 +312,7 @@
     <meta itemprop="headline" content="Área constante de um triângulo">
     <meta itemprop="description" content="Área de um triângulo.">
     <meta itemprop="datePublished" content="2020-08-20T00:00:00-03:00">
-    <meta itemprop="dateModified" content="2020-08-20T00:00:00-03:00">
+    <meta itemprop="dateModified" content="2020-08-22T00:00:00-03:00">
 
     <div class="page__inner-wrap">
       
@@ -327,45 +327,60 @@
 
       <section class="page__content" itemprop="text">
         
-        <p><strong>Problema.</strong> Considere dois quadrado colados, como mostrado na figura abaixo. Determine a área do triângulo em destaque.</p>
+        <p><strong>Problema.</strong> Considere dois quadrado “colados”, como mostrado na <a href="#figura1">Figura 1</a>. Determine a área do triângulo em destaque.</p>
 
-<p><img src="http://localhost:4000/assets/imagens/img-area-do-triangulo.png" alt="img-area-do-triangulo" class="align-center" /></p>
+<p><a id="figura1"></a></p>
+<figure style="width: 300px" class="align-center">
+    <img src="http://localhost:4000/assets/imagens/img-area-do-triangulo.png" alt="" />
+    <figcaption>Figura 1.</figcaption>
+</figure>
 
-<p><strong>Solução.</strong> Antes de calcular a área do triângulo em destaque, vamos chamar o lado do quandrado maior de $x$ e considerar $x&gt;\sqrt{2}$.</p>
+<!--![img-area-do-triangulo](http://localhost:4000/assets/imagens/img-area-do-triangulo.png){: .align-center}-->
 
-<p>Agora, observe que a área total da figura acima é igual soma das áreas dos quadrados, ou seja,</p>
+<p><strong>Solução.</strong> Antes de calcular a área do triângulo, vamos denotar por $x$ a medida do lado do quandrado maior. Além disso, para os cálculos devemos assumir $x&gt;\sqrt{2}$.</p>
+
+<p>Agora, observe que a área total da figura é igual a soma das áreas dos quadrados, ou seja,</p>
 
 \[A_{total} = x^2 + 2.\]
 
-<p>Para determinarmos a área do triângulo em destaque, basta subtrair da área total a área dos outros triângulo menores, (<a href="/assets/imagens/img-area-do-triangulo2.png">cf. a figura</a>),</p>
-
-<p><img src="http://localhost:4000/assets/imagens/img-area-do-triangulo2.png" alt="img-area-do-triangulo2" class="align-center" /></p>
-
-<p>que são dadas por:</p>
+<p>Para determinarmos a área do triângulo desejada, basta subtrair da área total a área dos triângulo menores $A_1$, $A_2$ e $A_3$ (veja a <a href="#figura2">Figura 2</a>) que são dadas por:</p>
 
 <ul>
   <li>
-    <p>$A_1 = 1 u.a;$</p>
+    <p>$A_1 = 1;$</p>
   </li>
   <li>
-    <p>$A_2 = \dfrac{x(x+\sqrt{2})}{2} = \dfrac{x^2+\sqrt{2}x}{2}\, u.a;$</p>
+    <p>$A_2 = \dfrac{x(x+\sqrt{2})}{2} = \dfrac{x^2+\sqrt{2}x}{2};$</p>
   </li>
   <li>
-    <p>$A_3 = \dfrac{x(x-\sqrt{2})}{2} = \dfrac{x^2-\sqrt{2}x}{2}\, u.a.$</p>
+    <p>$A_3 = \dfrac{x(x-\sqrt{2})}{2} = \dfrac{x^2-\sqrt{2}x}{2}.$</p>
   </li>
 </ul>
+
+<p><a id="figura2"></a></p>
+<figure style="width: 300px" class="align-center">
+    <img src="http://localhost:4000/assets/imagens/img-area-do-triangulo2.png" alt="" />
+    <figcaption>Figura 2.</figcaption>
+</figure>
+
+<!--
+<a id="figura2">
+    ![img-area-do-triangulo2](http://localhost:4000/assets/imagens/img-area-do-triangulo2.png){: .align-center}
+</a>-->
 
 <p>Assim, segue que</p>
 
 \[A_T = A_{total} - A_1 - A_2 - A_3\]
 
-\[A_T = x^2 + 2 -1 - \frac{(x^2+\sqrt{2}x)}{2} - \frac{(x^2-\sqrt{2}x)}{2}.\]
+\[A_T = x^2 + 2 -1 - \frac{(x^2+\sqrt{2}x)}{2} - \frac{(x^2-\sqrt{2}x)}{2}\]
 
 \[A_T = x^2 + 1 - \frac{x^2}{2} - \frac{\sqrt{2}\,x}{2} - \frac{x^2}{2} + \frac{\sqrt{2}x}{2}.\]
 
 <p>Portanto,</p>
 
-\[A_T = 1.\]
+\[A_T = 1 \, u.a,\]
+
+<p>onde $u.a$ significa <strong>unidade de área</strong>.</p>
 
         
       </section>
@@ -426,7 +441,7 @@
 
 
         
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Atualizado em:</strong> <time datetime="2020-08-20">August 20, 2020</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Atualizado em:</strong> <time datetime="2020-08-22">August 22, 2020</time></p>
 
 
       </footer>
@@ -451,7 +466,8 @@
 ">Anterior</a>
     
     
-      <a href="#" class="pagination--pager disabled">Próxima</a>
+      <a href="/problemas-resolvidos/2020-08-21-area-do-retangulo/" class="pagination--pager" title="Área do retângulo
+">Próxima</a>
     
   </nav>
 

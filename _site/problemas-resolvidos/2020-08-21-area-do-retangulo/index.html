@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Test - Plotly - Marcos Ferriera - Website</title>
-<meta name="description" content="">
+<!-- begin _includes/seo.html --><title>Área do retângulo - Marcos Ferriera - Website</title>
+<meta name="description" content="Área do retângulo.">
 
 
   <meta name="author" content="Marcos Ferreira">
@@ -19,23 +19,27 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Marcos Ferriera - Website">
-<meta property="og:title" content="Test - Plotly">
-<meta property="og:url" content="http://localhost:4000/teste-plotly/">
+<meta property="og:title" content="Área do retângulo">
+<meta property="og:url" content="http://localhost:4000/problemas-resolvidos/2020-08-21-area-do-retangulo/">
 
 
-  <meta property="og:description" content="">
+  <meta property="og:description" content="Área do retângulo.">
 
 
+
+  <meta property="og:image" content="http://localhost:4000/assets/imagens/img-area-do-retangulo.png">
 
 
 
   <meta name="twitter:site" content="@mrondiney">
-  <meta name="twitter:title" content="Test - Plotly">
-  <meta name="twitter:description" content="">
-  <meta name="twitter:url" content="http://localhost:4000/teste-plotly/">
+  <meta name="twitter:title" content="Área do retângulo">
+  <meta name="twitter:description" content="Área do retângulo.">
+  <meta name="twitter:url" content="http://localhost:4000/problemas-resolvidos/2020-08-21-area-do-retangulo/">
 
   
     <meta name="twitter:card" content="summary">
+    
+      <meta name="twitter:image" content="http://localhost:4000/assets/imagens/img-area-do-retangulo.png">
     
   
 
@@ -43,9 +47,11 @@
 
 
 
-  <meta property="article:published_time" content="2020-08-15T00:00:00-03:00">
+  <meta property="article:published_time" content="2020-08-21T00:00:00-03:00">
 
 
+
+  <meta property="article:modified_time" content="2020-08-21T00:00:00-03:00">
 
 
 
@@ -54,7 +60,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/teste-plotly/">
+<link rel="canonical" href="http://localhost:4000/problemas-resolvidos/2020-08-21-area-do-retangulo/">
 
 
 
@@ -117,7 +123,7 @@
 
   </head>
 
-  <body class="layout--collection widee">
+  <body class="layout--single wide">
     <nav class="skip-links">
   <h2 class="screen-reader-text">Skip links</h2>
   <ul>
@@ -302,80 +308,196 @@
 
 
 
-  <div class="archive">
-    
-      <h1 id="page-title" class="page__title">Test - Plotly</h1>
-    
-    <div id="tester" style="width:600px;height:250px;"></div>
-<script>
-        window.PlotlyConfig = {MathJaxConfig: 'local'}
-</script>
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Área do retângulo">
+    <meta itemprop="description" content="Área do retângulo.">
+    <meta itemprop="datePublished" content="2020-08-21T00:00:00-03:00">
+    <meta itemprop="dateModified" content="2020-08-21T00:00:00-03:00">
 
-<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-
-<script>
-	TESTER = document.getElementById('tester');
-	Plotly.newPlot( TESTER, [{
-	x: [1, 2, 3, 4, 5],
-	y: [1, 2, 4, 8, 16] }], {
-	margin: { t: 0 } }, {displaylogo: false} );
-</script>
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Área do retângulo
+</h1>
+          
 
 
+        </header>
+      
 
+      <section class="page__content" itemprop="text">
+        
+        <p><strong>Problema.</strong> Sejam dois quandrados dispostos, como na <a href="#figura">Figura 1</a>. Determine a área do retângulo em destaque.</p>
 
-<div class="entries-grid">
+<!--<a id = "figura">
+    ![img-area-do-retangulo](http://localhost:4000/assets/imagens/img-area-do-retangulo.png){: .align-center}
+</a>-->
+
+<p><a id="figura"></a></p>
+<figure style="width: 300px" class="align-center">
+    <img src="http://localhost:4000/assets/imagens/img-area-do-retangulo.png" alt="" />
+    <figcaption>Figura 1.</figcaption>
+</figure>
+
+<p><strong>Solução.</strong> Considere a notação na <a href="#figura2">Figura 2</a>. A área do retângulo $NOPQ$, em vermelho, é determinada conhecendo as medidas de seus lados. Uma delas é facilmente obtida, pois corresponde ao lado do quadrado $MCNO$. Com efeito, aplicando o teorema de pitágoras no triângulo $MBC$, temos que</p>
+
+\[\overline{MC}^{\,2} = 2^2 + 4^2\]
+
+\[\overline{MC}   = \sqrt{20}\]
+
+\[\overline{MC}   = 2\sqrt{5}.\]
+
+<p><a id="figura2"></a></p>
+<figure style="width: 300px" class="align-center">
+    <img src="http://localhost:4000/assets/imagens/img2-area-do-retangulo.png" alt="" />
+    <figcaption>Figura 2.</figcaption>
+</figure>
+
+<!--
+<a ind = "figura2">
+    ![img-area-do-retangulo](http://localhost:4000/assets/imagens/img2-area-do-retangulo.png){: .align-center}
+</a>-->
+
+<p>Note que a área do triângulo $MCD$ na <a href="#figura3">Figura 3</a> é $\mathsf{S} = 8$, pois tem um base $\overline{CD} = 4$ e altura $\overline{BC} = 4$. Por outro lado, calculando a área do mesmo triângulo $MCD$ em relação a base $MC$, conseguimos obter o valor de $h = \overline{CQ}$. De fato,</p>
+
+\[\mathsf{S} = \frac{\overline{MC}\cdot h}{2}\]
+
+\[8 = \frac{2\sqrt{5}\cdot h}{2} \to h = \frac{8}{\sqrt{5}}\]
+
+\[h = \frac{8\sqrt{5}}{5}.\]
+
+<p><a id="figura3"></a></p>
+<figure style="width: 300px" class="align-center">
+    <img src="http://localhost:4000/assets/imagens/img3-area-do-retangulo.png" alt="" />
+    <figcaption>Figura 3.</figcaption>
+</figure>
+
+<!--
+<a ind = "figura3">
+![img-area-do-retangulo](http://localhost:4000/assets/imagens/img3-area-do-retangulo.png){: .align-center}
+</a>-->
+
+<p>Como $\overline{CN} = \overline{CM} = 2\sqrt{5}$, temos que</p>
+
+\[\overline{NQ} = \overline{CN} - \overline{CQ}\]
+
+\[\overline{NQ} = 2\sqrt{5} - \frac{8\sqrt{5}}{5}\]
+
+\[\overline{NQ} = \frac{2\sqrt{5}}{5}.\]
+
+<p>Portanto, a área do retângulo será</p>
+
+\[\mathsf{S_R} = \overline{NO} \cdot \overline{NQ}\]
+
+\[\mathsf{S_R} = 2\sqrt{5} \cdot \frac{2\sqrt{5}}{5}\]
+
+\[\mathsf{S_R} = 4.\]
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
   
 
 
+  
+  
+  
 
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/teste-plotly/" rel="permalink">Test - Plotly
-</a>
-      
-    </h2>
-    
-
-
-  <p class="page__meta">
-
-    
-
-    
-
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
     
       
       
-
-      <i class="far fa-clock" aria-hidden="true"></i>
-      
-        menos que 1 minuto(s) de leitura
-      
+      <a href="/tags/#matem%C3%A1tica" class="page__taxonomy-item" rel="tag">matemática</a><span class="sep">, </span>
     
-
+      
+      
+      <a href="/tags/#problema" class="page__taxonomy-item" rel="tag">problema</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#ret%C3%A2ngulo" class="page__taxonomy-item" rel="tag">retângulo</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#teorema-de-pit%C3%A1goras" class="page__taxonomy-item" rel="tag">teorema de Pitágoras</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#tri%C3%A2ngulo-ret%C3%A2ngulo" class="page__taxonomy-item" rel="tag">triângulo retângulo</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#%C3%A1rea" class="page__taxonomy-item" rel="tag">área</a>
+    
+    </span>
   </p>
 
-    <p class="archive__item-excerpt" itemprop="description">
 
 
 
+  
 
 
+  
+  
+  
 
-</p>
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categorias: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#problemas-resolvidos" class="page__taxonomy-item" rel="tag">Problemas resolvidos</a>
+    
+    </span>
+  </p>
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Atualizado em:</strong> <time datetime="2020-08-21">August 21, 2020</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Compartilhe</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?via=mrondiney&text=%C3%81rea+do+ret%C3%A2ngulo%20http%3A%2F%2Flocalhost%3A4000%2Fproblemas-resolvidos%2F2020-08-21-area-do-retangulo%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartilhe Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fproblemas-resolvidos%2F2020-08-21-area-do-retangulo%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartilhe Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fproblemas-resolvidos%2F2020-08-21-area-do-retangulo%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartilhe LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/problemas-resolvidos/2020-08-20-area-do-triangulo/" class="pagination--pager" title="Área constante de um triângulo
+">Anterior</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Próxima</a>
+    
+  </nav>
+
+    </div>
+
+    
   </article>
+
+  
+  
 </div>
 
-</div>
-
-  </div>
-</div>
     </div>
 
     

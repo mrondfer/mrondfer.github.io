@@ -1,14 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-21T02:04:28-03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marcos Ferriera - Website</title><subtitle>Site em construção</subtitle><author><name>Marcos Ferreira</name></author><entry><title type="html">Test - Plotly</title><link href="http://localhost:4000/teste-plotly/" rel="alternate" type="text/html" title="Test - Plotly" /><published>2020-08-15T00:00:00-03:00</published><updated>2020-08-15T00:00:00-03:00</updated><id>http://localhost:4000/teste-plotly</id><content type="html" xml:base="http://localhost:4000/teste-plotly/">&lt;div id=&quot;tester&quot; style=&quot;width:600px;height:250px;&quot;&gt;&lt;/div&gt;
-&lt;script&gt;
-        window.PlotlyConfig = {MathJaxConfig: 'local'}
-&lt;/script&gt;
-
-&lt;script src=&quot;https://cdn.plot.ly/plotly-latest.min.js&quot;&gt;&lt;/script&gt;
-
-&lt;script&gt;
-	TESTER = document.getElementById('tester');
-	Plotly.newPlot( TESTER, [{
-	x: [1, 2, 3, 4, 5],
-	y: [1, 2, 4, 8, 16] }], {
-	margin: { t: 0 } }, {displaylogo: false} );
-&lt;/script&gt;</content><author><name>Marcos Ferreira</name></author><category term="matemática" /><category term="plotly" /><category term="gráficos" /><summary type="html"></summary></entry></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-25T19:18:49-03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marcos Ferriera - Website</title><subtitle>Site em construção</subtitle><author><name>Marcos Ferreira</name></author></feed>

@@ -1,0 +1,66 @@
+I"�	<p><strong>Problema.</strong> Sejam dois quandrados dispostos, como na <a href="#figura">Figura 1</a>. Determine a área do retângulo em destaque.</p>
+
+<!--<a id = "figura">
+    ![img-area-do-retangulo](http://localhost:4000/assets/imagens/img-area-do-retangulo.png){: .align-center}
+</a>-->
+
+<p><a id="figura"></a></p>
+<figure style="width: 300px" class="align-center">
+    <img src="http://localhost:4000/assets/imagens/img-area-do-retangulo.png" alt="" />
+    <figcaption>Figura 1.</figcaption>
+</figure>
+
+<p><strong>Solução.</strong> Considere a notação na <a href="#figura2">Figura 2</a>. A área do retângulo $NOPQ$, em vermelho, é determinada conhecendo as medidas de seus lados. Uma delas é facilmente obtida, pois corresponde ao lado do quadrado $MCNO$. Com efeito, aplicando o teorema de pitágoras no triângulo $MBC$, temos que</p>
+
+\[\overline{MC}^{\,2} = 2^2 + 4^2\]
+
+\[\overline{MC}   = \sqrt{20}\]
+
+\[\overline{MC}   = 2\sqrt{5}.\]
+
+<p><a id="figura2"></a></p>
+<figure style="width: 300px" class="align-center">
+    <img src="http://localhost:4000/assets/imagens/img2-area-do-retangulo.png" alt="" />
+    <figcaption>Figura 2.</figcaption>
+</figure>
+
+<!--
+<a ind = "figura2">
+    ![img-area-do-retangulo](http://localhost:4000/assets/imagens/img2-area-do-retangulo.png){: .align-center}
+</a>-->
+
+<p>Note que a área do triângulo $MCD$ na <a href="#figura3">Figura 3</a> é $\mathsf{S} = 8$, pois tem um base $\overline{CD} = 4$ e altura $\overline{BC} = 4$. Por outro lado, calculando a área do mesmo triângulo $MCD$ em relação a base $MC$, conseguimos obter o valor de $h = \overline{CQ}$. De fato,</p>
+
+\[\mathsf{S} = \frac{\overline{MC}\cdot h}{2}\]
+
+\[8 = \frac{2\sqrt{5}\cdot h}{2} \to h = \frac{8}{\sqrt{5}}\]
+
+\[h = \frac{8\sqrt{5}}{5}.\]
+
+<p><a id="figura3"></a></p>
+<figure style="width: 300px" class="align-center">
+    <img src="http://localhost:4000/assets/imagens/img3-area-do-retangulo.png" alt="" />
+    <figcaption>Figura 3.</figcaption>
+</figure>
+
+<!--
+<a ind = "figura3">
+![img-area-do-retangulo](http://localhost:4000/assets/imagens/img3-area-do-retangulo.png){: .align-center}
+</a>-->
+
+<p>Como $\overline{CN} = \overline{CM} = 2\sqrt{5}$, temos que</p>
+
+\[\overline{NQ} = \overline{CN} - \overline{CQ}\]
+
+\[\overline{NQ} = 2\sqrt{5} - \frac{8\sqrt{5}}{5}\]
+
+\[\overline{NQ} = \frac{2\sqrt{5}}{5}.\]
+
+<p>Portanto, a área do retângulo será</p>
+
+\[\mathsf{S_R} = \overline{NO} \cdot \overline{NQ}\]
+
+\[\mathsf{S_R} = 2\sqrt{5} \cdot \frac{2\sqrt{5}}{5}\]
+
+\[\mathsf{S_R} = 4.\]
+:ET
