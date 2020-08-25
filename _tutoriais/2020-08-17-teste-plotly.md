@@ -1,9 +1,6 @@
 ---
 title: Test - Plotly
-layout: collection
-collection: posts
-entries_layout: grid
-classes: widee
+classes: wide
 mathjax: true
 date: 2020-08-15
 tags: [matemática,plotly,gráficos]
