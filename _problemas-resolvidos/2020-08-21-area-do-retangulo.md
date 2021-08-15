@@ -12,7 +12,7 @@ tags: [problema, matemática, área, retângulo, triângulo retângulo, teorema 
 last_modified_at: 2020-08-21
 ---
 
-**Problema.** Sejam dois quandrados dispostos, como na [Figura 1](#figura). Determine a área do retângulo em destaque.
+**Problema.** Sejam dois quandrados dispostos conforme a [Figura 1](#figura). Determine a área do retângulo em destaque.
 
 
 <!--<a id = "figura">
@@ -26,7 +26,7 @@ last_modified_at: 2020-08-21
 </figure>
 
 
-**Solução.** Considere a notação na [Figura 2](#figura2). A área do retângulo $NOPQ$, em vermelho, é determinada conhecendo as medidas de seus lados. Uma delas é facilmente obtida, pois corresponde ao lado do quadrado $MCNO$. Com efeito, aplicando o teorema de pitágoras no triângulo $MBC$, temos que
+**Solução.** Vamos adotar a notação na [Figura 2](#figura2). Conseguimos calcular a área do retângulo $NOPQ$, em vermelho, determinando as medidas dos lados $\overline{NO}$ e $\overline{NQ}$. Um deles é facilmente obtido, pois corresponde ao lado do quadrado $MCNO$. De fato, aplicando o teorema de pitágoras no triângulo $MBC$, temos
 
 $$\overline{MC}^{\,2} = 2^2 + 4^2$$
 
@@ -46,7 +46,7 @@ $$\overline{MC}   = 2\sqrt{5}.$$
     ![img-area-do-retangulo]({{ site.url }}{{ site.baseurl }}/assets/imagens/img2-area-do-retangulo.png){: .align-center}
 </a>-->
 
-Note que a área do triângulo $MCD$ na [Figura 3](#figura3) é $\mathsf{S} = 8$, pois tem um base $\overline{CD} = 4$ e altura $\overline{BC} = 4$. Por outro lado, calculando a área do mesmo triângulo $MCD$ em relação a base $MC$, conseguimos obter o valor de $h = \overline{CQ}$. De fato,
+Note que a área do triângulo $MCD$ na [Figura 3](#figura3) é $\mathsf{S} = 8$, pois tem um base $\overline{CD} = 4$ e altura $\overline{BC} = 4$. Por outro lado, calculando a área do mesmo triângulo $MCD$ em relação a base $MC$, temos
 
 $$\mathsf{S} = \frac{\overline{MC}\cdot h}{2}$$
 
@@ -65,7 +65,7 @@ $$h = \frac{8\sqrt{5}}{5}.$$
 ![img-area-do-retangulo]({{ site.url }}{{ site.baseurl }}/assets/imagens/img3-area-do-retangulo.png){: .align-center}
 </a>-->
 
-Como $\overline{CN} = \overline{CM} = 2\sqrt{5}$, temos que 
+Como $\overline{CN} = \overline{CM} = 2\sqrt{5}$, segue
 
 $$\overline{NQ} = \overline{CN} - \overline{CQ}$$
 
@@ -73,7 +73,7 @@ $$\overline{NQ} = 2\sqrt{5} - \frac{8\sqrt{5}}{5}$$
 
 $$\overline{NQ} = \frac{2\sqrt{5}}{5}.$$
 
-Portanto, a área do retângulo será
+Portanto, a área do retângulo $NOPQ$ será
 
 $$\mathsf{S_R} = \overline{NO} \cdot \overline{NQ}$$
 
