@@ -10,7 +10,7 @@
     <meta charset="utf-8">
 
 <!-- begin _includes/seo.html --><title>Post: Gallery - Minimal Mistakes</title>
-<meta name="description" content="These are gallery tests for image wrapped in &lt;figure&gt; elements.">
+<meta name="description" content="These are gallery tests for image wrapped in &lt;figure&gt; elements.  To place a gallery add the necessary YAML Front Matter:  gallery:   - url: /assets/images/unsplash-gallery-image-1.jpg     image_path: /assets/images/unsplash-gallery-image-1-th.jpg     alt: &quot;placeholder image 1&quot;     title: &quot;Image 1 title caption&quot;   - url: /assets/images/unsplash-gallery-image-2.jpg     image_path: /assets/images/unsplash-gallery-image-2-th.jpg     alt: &quot;placeholder image 2&quot;     title: &quot;Image 2 title caption&quot;   - url: /assets/images/unsplash-gallery-image-3.jpg     image_path: /assets/images/unsplash-gallery-image-3-th.jpg     alt: &quot;placeholder image 3&quot;     title: &quot;Image 3 title caption&quot;   - url: /assets/images/unsplash-gallery-image-4.jpg     image_path: /assets/images/unsplash-gallery-image-4-th.jpg     alt: &quot;placeholder image 4&quot;     title: &quot;Image 4 title caption&quot;   And then drop-in the gallery include — gallery caption is optional.  {% include gallery caption=&quot;This is a sample gallery with **Markdown support**.&quot; %}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      This is a sample gallery with Markdown support.       This is some text after the gallery just to make sure that everything aligns properly.  Here comes another gallery, this time set the id to match 2nd gallery hash in YAML Front Matter.  gallery2:   - url: https://flic.kr/p/8a6Ven     image_path: https://farm2.staticflickr.com/1272/4697500467_8294dac099_q.jpg     alt: &quot;Black and grays with a hint of green&quot;   - url: https://flic.kr/p/8a738X     image_path: https://farm5.staticflickr.com/4029/4697523701_249e93ba23_q.jpg     alt: &quot;Made for open text placement&quot;   - url: https://flic.kr/p/8a6VXP     image_path: https://farm5.staticflickr.com/4046/4697502929_72c612c636_q.jpg     alt: &quot;Fog in the trees&quot;   And place it like so:  {% include gallery id=&quot;gallery2&quot; caption=&quot;This is a second gallery example with images hosted externally.&quot; %}                                                                                                                                This is a second gallery example with images hosted externally.       And for giggles one more gallery just to make sure this works. To fill page content container add class=&quot;full&quot;.                                                     This is a third gallery example with two images and fills the entire content container.       Gallery column layout can be overrided by setting a layout.  {% include gallery id=&quot;gallery&quot; layout=&quot;half&quot; caption=&quot;This is a half gallery layout example.&quot; %}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      This is a half gallery layout example.">
 
 
   <meta name="author" content="Your Name">
@@ -23,7 +23,7 @@
 <meta property="og:url" content="http://localhost:4000/test/post%20formats/post-gallery/">
 
 
-  <meta property="og:description" content="These are gallery tests for image wrapped in &lt;figure&gt; elements.">
+  <meta property="og:description" content="These are gallery tests for image wrapped in &lt;figure&gt; elements.  To place a gallery add the necessary YAML Front Matter:  gallery:   - url: /assets/images/unsplash-gallery-image-1.jpg     image_path: /assets/images/unsplash-gallery-image-1-th.jpg     alt: &quot;placeholder image 1&quot;     title: &quot;Image 1 title caption&quot;   - url: /assets/images/unsplash-gallery-image-2.jpg     image_path: /assets/images/unsplash-gallery-image-2-th.jpg     alt: &quot;placeholder image 2&quot;     title: &quot;Image 2 title caption&quot;   - url: /assets/images/unsplash-gallery-image-3.jpg     image_path: /assets/images/unsplash-gallery-image-3-th.jpg     alt: &quot;placeholder image 3&quot;     title: &quot;Image 3 title caption&quot;   - url: /assets/images/unsplash-gallery-image-4.jpg     image_path: /assets/images/unsplash-gallery-image-4-th.jpg     alt: &quot;placeholder image 4&quot;     title: &quot;Image 4 title caption&quot;   And then drop-in the gallery include — gallery caption is optional.  {% include gallery caption=&quot;This is a sample gallery with **Markdown support**.&quot; %}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      This is a sample gallery with Markdown support.       This is some text after the gallery just to make sure that everything aligns properly.  Here comes another gallery, this time set the id to match 2nd gallery hash in YAML Front Matter.  gallery2:   - url: https://flic.kr/p/8a6Ven     image_path: https://farm2.staticflickr.com/1272/4697500467_8294dac099_q.jpg     alt: &quot;Black and grays with a hint of green&quot;   - url: https://flic.kr/p/8a738X     image_path: https://farm5.staticflickr.com/4029/4697523701_249e93ba23_q.jpg     alt: &quot;Made for open text placement&quot;   - url: https://flic.kr/p/8a6VXP     image_path: https://farm5.staticflickr.com/4046/4697502929_72c612c636_q.jpg     alt: &quot;Fog in the trees&quot;   And place it like so:  {% include gallery id=&quot;gallery2&quot; caption=&quot;This is a second gallery example with images hosted externally.&quot; %}                                                                                                                                This is a second gallery example with images hosted externally.       And for giggles one more gallery just to make sure this works. To fill page content container add class=&quot;full&quot;.                                                     This is a third gallery example with two images and fills the entire content container.       Gallery column layout can be overrided by setting a layout.  {% include gallery id=&quot;gallery&quot; layout=&quot;half&quot; caption=&quot;This is a half gallery layout example.&quot; %}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      This is a half gallery layout example.">
 
 
 
@@ -33,7 +33,7 @@
 
   <meta name="twitter:site" content="@mmistakes">
   <meta name="twitter:title" content="Post: Gallery">
-  <meta name="twitter:description" content="These are gallery tests for image wrapped in &lt;figure&gt; elements.">
+  <meta name="twitter:description" content="These are gallery tests for image wrapped in &lt;figure&gt; elements.  To place a gallery add the necessary YAML Front Matter:  gallery:   - url: /assets/images/unsplash-gallery-image-1.jpg     image_path: /assets/images/unsplash-gallery-image-1-th.jpg     alt: &quot;placeholder image 1&quot;     title: &quot;Image 1 title caption&quot;   - url: /assets/images/unsplash-gallery-image-2.jpg     image_path: /assets/images/unsplash-gallery-image-2-th.jpg     alt: &quot;placeholder image 2&quot;     title: &quot;Image 2 title caption&quot;   - url: /assets/images/unsplash-gallery-image-3.jpg     image_path: /assets/images/unsplash-gallery-image-3-th.jpg     alt: &quot;placeholder image 3&quot;     title: &quot;Image 3 title caption&quot;   - url: /assets/images/unsplash-gallery-image-4.jpg     image_path: /assets/images/unsplash-gallery-image-4-th.jpg     alt: &quot;placeholder image 4&quot;     title: &quot;Image 4 title caption&quot;   And then drop-in the gallery include — gallery caption is optional.  {% include gallery caption=&quot;This is a sample gallery with **Markdown support**.&quot; %}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      This is a sample gallery with Markdown support.       This is some text after the gallery just to make sure that everything aligns properly.  Here comes another gallery, this time set the id to match 2nd gallery hash in YAML Front Matter.  gallery2:   - url: https://flic.kr/p/8a6Ven     image_path: https://farm2.staticflickr.com/1272/4697500467_8294dac099_q.jpg     alt: &quot;Black and grays with a hint of green&quot;   - url: https://flic.kr/p/8a738X     image_path: https://farm5.staticflickr.com/4029/4697523701_249e93ba23_q.jpg     alt: &quot;Made for open text placement&quot;   - url: https://flic.kr/p/8a6VXP     image_path: https://farm5.staticflickr.com/4046/4697502929_72c612c636_q.jpg     alt: &quot;Fog in the trees&quot;   And place it like so:  {% include gallery id=&quot;gallery2&quot; caption=&quot;This is a second gallery example with images hosted externally.&quot; %}                                                                                                                                This is a second gallery example with images hosted externally.       And for giggles one more gallery just to make sure this works. To fill page content container add class=&quot;full&quot;.                                                     This is a third gallery example with two images and fills the entire content container.       Gallery column layout can be overrided by setting a layout.  {% include gallery id=&quot;gallery&quot; layout=&quot;half&quot; caption=&quot;This is a half gallery layout example.&quot; %}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      This is a half gallery layout example.">
   <meta name="twitter:url" content="http://localhost:4000/test/post%20formats/post-gallery/">
 
   
@@ -310,7 +310,7 @@
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Post: Gallery">
-    <meta itemprop="description" content="These are gallery tests for image wrapped in &lt;figure&gt; elements.">
+    <meta itemprop="description" content="These are gallery tests for image wrapped in &lt;figure&gt; elements.To place a gallery add the necessary YAML Front Matter:gallery:  - url: /assets/images/unsplash-gallery-image-1.jpg    image_path: /assets/images/unsplash-gallery-image-1-th.jpg    alt: &quot;placeholder image 1&quot;    title: &quot;Image 1 title caption&quot;  - url: /assets/images/unsplash-gallery-image-2.jpg    image_path: /assets/images/unsplash-gallery-image-2-th.jpg    alt: &quot;placeholder image 2&quot;    title: &quot;Image 2 title caption&quot;  - url: /assets/images/unsplash-gallery-image-3.jpg    image_path: /assets/images/unsplash-gallery-image-3-th.jpg    alt: &quot;placeholder image 3&quot;    title: &quot;Image 3 title caption&quot;  - url: /assets/images/unsplash-gallery-image-4.jpg    image_path: /assets/images/unsplash-gallery-image-4-th.jpg    alt: &quot;placeholder image 4&quot;    title: &quot;Image 4 title caption&quot;And then drop-in the gallery include — gallery caption is optional.{% include gallery caption=&quot;This is a sample gallery with **Markdown support**.&quot; %}                                                                                                                                                                                                                                                                                                                                                                                                        This is a sample gallery with Markdown support.  This is some text after the gallery just to make sure that everything aligns properly.Here comes another gallery, this time set the id to match 2nd gallery hash in YAML Front Matter.gallery2:  - url: https://flic.kr/p/8a6Ven    image_path: https://farm2.staticflickr.com/1272/4697500467_8294dac099_q.jpg    alt: &quot;Black and grays with a hint of green&quot;  - url: https://flic.kr/p/8a738X    image_path: https://farm5.staticflickr.com/4029/4697523701_249e93ba23_q.jpg    alt: &quot;Made for open text placement&quot;  - url: https://flic.kr/p/8a6VXP    image_path: https://farm5.staticflickr.com/4046/4697502929_72c612c636_q.jpg    alt: &quot;Fog in the trees&quot;And place it like so:{% include gallery id=&quot;gallery2&quot; caption=&quot;This is a second gallery example with images hosted externally.&quot; %}                                                                                                        This is a second gallery example with images hosted externally.  And for giggles one more gallery just to make sure this works. To fill page content container add class=&quot;full&quot;.                                        This is a third gallery example with two images and fills the entire content container.  Gallery column layout can be overrided by setting a layout.{% include gallery id=&quot;gallery&quot; layout=&quot;half&quot; caption=&quot;This is a half gallery layout example.&quot; %}                                                                                                                                                                                                                                                                                                                                                                                                        This is a half gallery layout example.  ">
     <meta itemprop="datePublished" content="2010-09-09T00:00:00-03:00">
     
 
@@ -706,6 +706,130 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
+        <a href="/test/exemplos_aula_1/" rel="permalink">Estatística e probabilidade - Aula 1
+</a>
+      
+    </h2>
+    
+
+
+  <p class="page__meta">
+
+    
+
+    
+
+    
+      
+      
+
+      <i class="far fa-clock" aria-hidden="true"></i>
+      
+        1 minute read
+      
+    
+
+  </p>
+
+    <p class="archive__item-excerpt" itemprop="description">
+
+
+
+
+
+
+
+
+
+
+
+Estatística e probabilidade
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Estatística e probabilidade
+Aula 1
+Marcos Ferre...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
         <a href="/test/jekyll/post-exclude-search/" rel="permalink">Exclude Post from Search Index
 </a>
       
@@ -732,7 +856,11 @@
   </p>
 
     <p class="archive__item-excerpt" itemprop="description">This post should not appear in the search index because it has the following YAML Front Matter:
-</p>
+
+search: false
+
+
+Note: search: false only works to exclude po...</p>
   </article>
 </div>
 
@@ -772,7 +900,16 @@
   </p>
 
     <p class="archive__item-excerpt" itemprop="description">This post should display a header with a responsive video, if the theme supports it.
-</p>
+
+Settings
+
+
+  
+    
+      Parameter
+      Required
+      Description
+   ...</p>
   </article>
 </div>
 
@@ -816,50 +953,6 @@
   </p>
 
     <p class="archive__item-excerpt" itemprop="description">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different wa...</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src="/test/assets/images/markup-syntax-highlighting-teaser.jpg" alt="">
-      </div>
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/test/markup-syntax-highlighting/" rel="permalink">Markup: Syntax Highlighting
-</a>
-      
-    </h2>
-    
-
-
-  <p class="page__meta">
-
-    
-
-    
-
-    
-      
-      
-
-      <i class="far fa-clock" aria-hidden="true"></i>
-      
-        1 minute read
-      
-    
-
-  </p>
-
-    <p class="archive__item-excerpt" itemprop="description">Post displaying the various ways of highlighting code in Markdown.
-</p>
   </article>
 </div>
 
@@ -914,7 +1007,7 @@
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2020 Your Name. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2021 Your Name. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>

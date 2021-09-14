@@ -287,6 +287,9 @@ collections:
   problemas-resolvidos:
     output: true
     permalink: /:collection/:path/ 
+  estatistica-probabilidade:
+    output: true
+    permalink: /:collection/:path/
 
 # Defaults
 defaults:
@@ -326,6 +329,16 @@ defaults:
   - scope:
       path: ""
       type: problemas-resolvidos
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+
+# _estatistica-probabilidade
+  - scope:
+      path: ""
+      type: estatistica-probabilidade
     values:
       layout: single
       author_profile: true

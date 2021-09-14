@@ -6,6 +6,3 @@ collection: estatistica-probabilidade
 entries_layout: grid
 classes: wide
 ---
-<br /><br />
-**(em construção...)**
-<br /><br />
